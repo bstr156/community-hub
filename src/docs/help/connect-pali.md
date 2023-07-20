@@ -83,7 +83,7 @@ As you can see, you can add any EVM network here if you have the details. Detail
 
 ### Switching Pali to use a different network
 
-You can switch your MetaMask to a different network very easily!  Just click the network drop-down list at the top-left corner of your Pali window, and select which network you need to use at the moment.
+You can switch your Pali Wallet to a different network very easily!  Just click the network drop-down list at the top-left corner of your Pali window, and select which network you need to use at the moment.
 
 ### About your accounts/addresses in Pali Wallet
 
