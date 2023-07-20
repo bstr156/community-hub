@@ -32,7 +32,7 @@ If you're new to Rollux, the recommended wallets from the community are:
 
 
 ## Step 2 - Add Rollux to your wallet (optional)
-Rollux is already enabled in Pali Wallet by default, so if you choose to [install and use Pali](connect-pali.md) you can skip this step! Otherwise, to add Rollux to MetaMask follow this [guide](connect-metamask.md).
+The Rollux network is already available in Pali Wallet by default, so if you choose to [install and use Pali](connect-pali.md) you can skip this step! Otherwise, to add Rollux to MetaMask follow this [guide](connect-metamask.md).
 
 
 
