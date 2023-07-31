@@ -36,22 +36,29 @@ SupraOracles is growing fast and already supports a lot of networks, including R
 
 ### SNAP (Supra Network Activate Program)
 
-SupraOracles price feeds on Rollux are subsidized by the Syscoin Foundation! This means near real-time price feeds are currently free for projects building or deploying on Rollux. The Foundation is proud to participate in the [Supra Network Activate Program (SNAP)](https://supraoracles.com/docs/supra-network-activate-program-snap).
+SupraOracles price feeds on Rollux are subsidized by the Syscoin Foundation! This means price feeds with the liveness you need are currently free to use for projects building or deploying on Rollux. The Foundation is proud to participate in the [Supra Network Activate Program (SNAP)](https://supraoracles.com/docs/supra-network-activate-program-snap).
 
 
-### Price Feed
+### Price Feeds
 
-Rollux Tanenbaum: [`0xd48883758f32BA2b2a4ebF6b8238304e3bf10507`](https://rollux.tanenbaum.io/address/0xd48883758f32BA2b2a4ebF6b8238304e3bf10507)
-See [market pairs](https://supraoracles.com/docs/get-started/market-pairs#syscoin-rollux-chain)
+Rollux Mainnet: [`0x8a358F391d93f7558D5F5E61BDf533e2cc3Cf7a3`](https://explorer.rollux.com/address/0x8a358F391d93f7558D5F5E61BDf533e2cc3Cf7a3)
+See [market pairs](https://supraoracles.com/docs/price-feeds/trading-pairs)
 
-Syscoin NEVM (L1) Tanenbaum: [`0x7f003178060af3904b8b70fEa066AEE28e85043E`](https://tanenbaum.io/address/0x7f003178060af3904b8b70fEa066AEE28e85043E)
-See [market pairs](https://supraoracles.com/docs/get-started/market-pairs#syscoin-chain)
+Syscoin NEVM (L1) Mainnet: [`0x8a358F391d93f7558D5F5E61BDf533e2cc3Cf7a3`](https://explorer.syscoin.org/address/0x8a358F391d93f7558D5F5E61BDf533e2cc3Cf7a3)
+See [market pairs](https://supraoracles.com/docs/price-feeds/trading-pairs)
 
-[Get Started with SupraOracles Price Feeds](https://supraoracles.com/docs/get-started)
+
+Rollux Tanenbaum (Testnet): [`0xd48883758f32BA2b2a4ebF6b8238304e3bf10507`](https://rollux.tanenbaum.io/address/0xd48883758f32BA2b2a4ebF6b8238304e3bf10507)
+See [market pairs](https://supraoracles.com/docs/price-feeds/trading-pairs)
+
+Syscoin NEVM (L1) Tanenbaum (Testnet): [`0x7f003178060af3904b8b70fEa066AEE28e85043E`](https://tanenbaum.io/address/0x7f003178060af3904b8b70fEa066AEE28e85043E)
+See [market pairs](https://supraoracles.com/docs/price-feeds/trading-pairs)
+
+[Get Started Integrating with SupraOracles Price Feeds](https://supraoracles.com/docs/price-feeds/decentralized)
 
 ### Supra VRF (RNG)
 
-Rollux Tanenbaum: [`0xA983910583AB6b9C54e88D32512FF8aE0A56A025`](https://rollux.tanenbaum.io/address/0xA983910583AB6b9C54e88D32512FF8aE0A56A025)
+Rollux Tanenbaum (Testnet): [`0xA983910583AB6b9C54e88D32512FF8aE0A56A025`](https://rollux.tanenbaum.io/address/0xA983910583AB6b9C54e88D32512FF8aE0A56A025)
 
 [Get Started with Supra VRF](https://supraoracles.com/docs/vrf1)
 
