@@ -49,26 +49,17 @@ Managing assets on Rollux (or any other Ethereum-style network) means you will n
 12.  Click {Ok}
 
 **Congratulations!** 🎉 
-**You've installed Pali Wallet.  Next, we'll add the Rollux network!**
+**You've installed Pali Wallet.  Next, we'll connect to the Rollux network!**
 
-## Add the Rollux network to Pali Wallet
-
-13.  Now open Pali Wallet.
+## Pali Wallet is preconfigured with the Rollux network. You just need to select it.
 
 <div>
-<img width="400" src="../../assets/docs/help/paliwalkthrough6.png">
+<img width="400" src="../../assets/docs/help/pali_selectnetwork.png">
 </div>
 
-14.  Click the network dropdown at the top left.  Now move down and click the button {Custom RPC}.
+13.  Open Pali Wallet.  Click the network drop-down at the top left.
 
-<div>
-<img width="400" src="../../assets/docs/help/paliwalkthrough7.png">
-</div>
-
-
-15.  Enter the Rollux network details exactly as seen above.  Then click the button {Save}, then the button {Close}.
-
-16.  Now switch to the Rollux network in Pali by going to the network dropdown > Web3 Networks, then scroll down and select {Rollux Mainnet}.
+14.  Then click the {EVM Networks} drop-down, then scroll down and select {Rollux}.  
 
 **Congratulations!** 🎉 
 **You are now using Rollux with Pali Wallet.**
@@ -77,7 +68,7 @@ Managing assets on Rollux (or any other Ethereum-style network) means you will n
 
 ### Adding more networks
 
-Add the **Rollux Testnet** by returning to step 14 and doing the same but with [Rollux Testnet details](start-using-rollux-testnet/#rollux-tanenbaum-testnet-network-details).
+You can add the **Rollux Testnet** by returning to step 13, selecting {Custom RPC}, and entering [Rollux Testnet details](start-using-rollux-testnet/#rollux-tanenbaum-testnet-network-details).
 
 As you can see, you can add any EVM network here if you have the details. Details for many different networks are available on [ChainList](https://chainlist.org).
 
