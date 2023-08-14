@@ -30,13 +30,13 @@ Before running `make`,  do the following.
 Edit configuration file `ops-bedrock/docker-compose.rollux.yml`:
 
 1.  Replace `--sequencer.enabled` with `--sequencer.stopped`
-1.  Set `--p2p.static=/ip4/50.112.6.15/tcp/9003/p2p/{PeerID}`. Contact Syscoin Foundation to get your specific PeerID.
+1.  Set `--p2p.static=/ip4/{ipAddress}/tcp/9003/p2p/{PeerID}`. Contact Syscoin Foundation to get the {ipAddress} and your specific {peerID}.
 
 Edit configuration file `ops-bedrock/envs/p2p-node-rollux.env`:
 
 1.  set `SEQUENCER_RELAY_RPC=https://rpc.rollux.com/`
 
-### Contact Syscoin Foundation for your PeerID or for support
+### Contact Syscoin Foundation for the IP and your PeerID, or for support
 
 Reach out via any channels you already have with the Syscoin or Rollux teams.  
 If you have not yet communicated with Syscoin Foundation, you can reach them via this [form](https://wkf.ms/43zqBYp).
