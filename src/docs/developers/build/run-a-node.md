@@ -1,5 +1,5 @@
 ---
-title: Running a testnet or mainnet node
+title: Running a mainnet replica node
 lang: en-US
 ---
 
@@ -11,7 +11,7 @@ You can get free or premium RPC service from [providers](../../useful-tools/prov
 
 However, depending on the use case, sometimes running your own node is warranted.
 
-## Set up your own Rollux replica node
+## Set up your own Rollux peer-to-peer replica node on mainnet
 
 ### Hardware requirements
 
@@ -30,7 +30,7 @@ Before running `make`,  do the following.
 Edit configuration file `ops-bedrock/docker-compose.rollux.yml`:
 
 1.  Replace `--sequencer.enabled` with `--sequencer.stopped`
-1.  Set `--p2p.static=/ip4/{ipAddress}/tcp/9003/p2p/{PeerID}`. Contact Syscoin Foundation to get the {ipAddress} and your specific {peerID}.
+1.  Set `--p2p.static=/ip4/{ipAddress}/tcp/9003/p2p/{peerID}`. Contact Syscoin Foundation to get the {ipAddress} and your specific {peerID}.
 
 Edit configuration file `ops-bedrock/envs/p2p-node-rollux.env`:
 
