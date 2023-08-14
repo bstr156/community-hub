@@ -36,7 +36,7 @@ Edit configuration file `ops-bedrock/envs/p2p-node-rollux.env`:
 
 1.  set `SEQUENCER_RELAY_RPC=https://rpc.rollux.com/`
 
-### Contact Syscoin Foundation for your PeerID or for support
+### Contact Syscoin Foundation for the IP and your PeerID, or for support
 
 Reach out via any channels you already have with the Syscoin or Rollux teams.  
 If you have not yet communicated with Syscoin Foundation, you can reach them via this [form](https://wkf.ms/43zqBYp).
