@@ -3,16 +3,45 @@ title: Running a testnet or mainnet node
 lang: en-US
 ---
 
-## This information is currently outdated and applies to a deprecated version of Rollux. Check back for an updated version. Until then, reach out to the Rollux team directly for the correct instructions.
+If you're looking to build an app or integrate your service with Rollux you'll need access to a Rollux node. You have two options - use a hosted node/RPC from providers like Ankr or run your own node. Most often it is best to use a RPC provider as this frees you from having to allocate resources to, and maintain, a node.
 
-If you're looking to build an app on Rollux you'll need access to a Rollux node. You have two options - use a hosted node from providers like Ankr or run your own. 
+## Use a node/RPC provider
 
-## Hosted node providers
+You can get free or premium RPC service from [providers](../../useful-tools/providers.md) to get up and building quickly.
 
-You can get a free, hosted one from [providers](../../useful-tools/providers.md) to get up and building quickly.
+However, depending on the use case, sometimes running your own node is warranted.
 
-However, you might be interested in running your very own Rollux node.
-Here we'll go over the process of running a testnet or mainnet Rollux node for yourself.
+## Set up your own Rollux replica node
+
+### Hardware requirements
+
+Replicas need to store the transaction history of Rollux and to run Geth. 
+They need to be relatively powerful machines (real or virtual). 
+We recommend at least 16 GB RAM, and an SSD drive with at least 100 GB free.
+
+### Instructions
+
+The process is fairly easy thanks to the Docker image we have available.
+
+To get started, follow this [guide](https://github.com/SYS-Labs/rollux/blob/develop/ops-bedrock/P2P.md) with the following notes in mind:
+
+Before running `make`,  do the following.
+
+Edit configuration file `ops-bedrock/docker-compose.rollux.yml`:
+
+1.  Replace `--sequencer.enabled` with `--sequencer.stopped`
+1.  Set `--p2p.static=/ip4/50.112.6.15/tcp/9003/p2p/{PeerID}`. Contact Syscoin Foundation to get your specific PeerID.
+
+Edit configuration file `ops-bedrock/envs/p2p-node-rollux.env`:
+
+1.  set `SEQUENCER_RELAY_RPC=https://rpc.rollux.com/`
+
+### Contact Syscoin Foundation for your PeerID or for support
+
+Reach out via any channels you already have with the Syscoin or Rollux teams.  
+If you have not yet communicated with Syscoin Foundation, you can reach them via this [form](https://wkf.ms/43zqBYp).
+
+
 
 <!---
 ## Upgrades
@@ -21,13 +50,11 @@ If you run a node you need to subscribe to [an update feed](../releases.md) (eit
 Otherwise, your node will eventually stop working.
 --->
 
+
+<!--
+
 ## Configuration choices
 
-### Hardware requirements
-
-Replicas need to store the transaction history of Rollux and to run Geth. 
-They need to be relatively powerful machines (real or virtual). 
-We recommend at least 16 GB RAM, and an SSD drive with at least 100 GB free.
 
 ### Source of synchronization
 
@@ -108,6 +135,8 @@ While we did QA on these instructions and they work, the QA that the docker imag
     . ~/.profile
     ```
 --->
+
+<!--
 
 ### The Data Transport Layer (DTL)
 
@@ -324,7 +353,7 @@ You can replace it with you own directory as long as you are consistent.
 1. Wait a few hours until the entire history is downloaded by dtl and then propagated to l2geth.
    If you have any problems, [contact us on our Discord](https://discord-gateway.optimism.io/).
 
-
+-->
 
 <!--
 latest.sh:
