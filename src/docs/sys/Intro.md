@@ -89,12 +89,20 @@ Find out more about how Syscoin provides **[the most ideal L1 settlement for L2 
 
 ## FAQ
 
+**Q. "How do I connect to Rollux?" or "How do I start using Rollux?"**  
+A. Refer to our guide for **[getting started](../help/start-using-rollux-mainnet/)**.
+
 **Q."Does Syscoin Rollux require a separate gas token?"**   
 A. No. It uses the native coin of Syscoin for gas - SYS, or TSYS in the case of testnet.
 
-
-**Q."How do I get TSYS and/or move TSYS to the Rollux testnet?"**   
-A. A bridge contract is available. You simply send TSYS to a contract address on the Tanenbaum L1, then it arrives at your address on Rollux. **[Refer to instructions](https://docs.syscoin.org/docs/guides/rollux/metamask)**.
+**Q."How can I get some SYS?"**  
+A. There are a few ways:  
+1.  Use a centralized exchange. Go here for [further instructions](../help/start-using-rollux-mainnet/#step-3-fund-your-wallet-with-sys).
+2.  To get a small amount of SYS to cover a gas fee, you can use a [Rollux SYS faucet](../useful-tools/faucets/). This is helpful if you wish to get SYS from the Pegasys DEX, as some SYS is required to cover the tiny network fee for swapping.
+3.  Use the [Pegasys](https://app.pegasys.fi) on Rollux.  
+  
+**Q."How do I move SYS or TSYS between Syscoin and Rollux?"**   
+A. Use [Rollux Portal](https://bridge.rollux.com), the canonical bridge of Rollux. [Refer to instructions](../help/using-rollux-portal/).
 
 
 **Q.“What is the blocktime of the Rollux optimistic rollup?”**  
@@ -112,11 +120,11 @@ More activity on the rollup brings faster settlement, to a max rate of once ever
 
 
 **Q. "How do I set up a Rollux P2P replica node?"**  
-A. **[Guide](https://github.com/sys-labs/rollux/blob/develop/ops-bedrock/P2P.md)** is available. Based on Optimism Bedrock requirements, the recommended hardware is a minimum of 16GB RAM and at least 100GB of free SSD space. In order to be accepted by the network you will need a P2P key, Peer IDs and their IPs. Reach out to Syscoin Foundation for this information.
+A. Refer to our replica node setup **[guide](../developers/build/run-a-node/)**.
 
 
 **Q. "What RPC/WSS Methods/Subscriptions are available?**  
-A. Same as Optimism Bedrock (Until we have completed our own Rollux doc portal, refer to: **https://community.optimism.io/docs/developers/build/json-rpc/#**)
+A. Refer to our **[RPC documentation](../developers/build/json-rpc/#)**.
 
 **Q. Can you provide sample transactions of Rollux settling a batch on Syscoin NEVM and using PoDA on Syscoin Native (UTXO), and further info?**  
 A. Yes. These are testnet transactions.  

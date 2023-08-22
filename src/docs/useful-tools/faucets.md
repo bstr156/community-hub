@@ -3,21 +3,20 @@ title: Network Faucets
 lang: en-US
 ---
 
-## Testnet Faucets
+## Rollux SYS Faucets
 
-#### Rollux Tanenbaum
+#### [Rollux Mainnet]((https://rollux.id/faucet?chainId=570))
 
-[Syscoin Name Service](https://rollux.id/faucet) is an easy way to get Test SYS on Rollux Tanenbaum directly.
+#### [Rollux Tanenbaum](https://rollux.id/faucet?chainId=57000)
 
-#### Request Tanenbaum SYS in Rollux Discord
+If for any reason the Rollux SYS faucets are unavailable, head to the [Rollux Discord](https://discord.gg/rollux) and request some SYS there. Someone will likely be available to send you a tiny amount.
 
-If for any reason the Rollux Tanenbaum Faucet is unavailable, head to the [Rollux Discord](https://discord.gg/rollux) and request some Rollux Test SYS there.
+## Syscoin NEVM SYS Faucets
 
+#### [Syscoin NEVM (L1) Mainnet](https://faucet.syscoin.org)
 
-#### Syscoin NEVM (L1) Tanenbaum
+#### [Syscoin NEVM (L1) Tanenbaum](https://faucet.tanenbaum.io)
 
-Syscoin Foundation offers an [L1 testnet faucet](https://faucet.tanenbaum.io) for Test SYS. This is a social media authenticated faucet. You can bridge this SYS from NEVM Tanenbaum to Rollux Tanenbaum using the [Rollux Portal](https://bridge-testnet.syscoin.org).
+NOTE: The NEVM faucets use social media authentication. The options are to use X ("Twitter") or Facebook to authenticate your request. The Facebook authentication works, but X have changed their API, so you cannot use this faucet with X/Twitter. A new simpler NEVM faucet is being set up, and we will provide that as soon as it's available.
 
-## Mainnet Faucets
-
-Syscoin Foundation offers an [L1 mainnet faucet](https://faucet.syscoin.org) that provides a very small amount of SYS that can cover a basic gas fee. This is a social media authenticated faucet. You can bridge this SYS from NEVM to Rollux using the [Rollux Portal](https://bridge.rollux.com).
+If you cannot use the NEVM faucets for any reason, head to the [Syscoin Discord](https://discord.gg/syscoin) and request some SYS there. Someone will likely be available to send you a tiny amount.
