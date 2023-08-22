@@ -8,7 +8,7 @@ This means we can provide you with mainnet SYS faucets that provide enough to co
 
 ## Rollux SYS Faucets
 
-#### [Rollux Mainnet]((https://rollux.id/faucet?chainId=570))
+#### [Rollux Mainnet](https://rollux.id/faucet?chainId=570)
 
 #### [Rollux Tanenbaum](https://rollux.id/faucet?chainId=57000)
 
