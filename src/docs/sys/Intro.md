@@ -120,7 +120,7 @@ More activity on the rollup brings faster settlement, to a max rate of once ever
 
 
 **Q. "How do I set up a Rollux P2P replica node?"**  
-A. Refer to our replica node setup **[guide](../developers/build/run-a-node/)**.
+A. Refer to our replica node setup **[guide](../developers/build/run-a-node/)**. 
 
 
 **Q. "What RPC/WSS Methods/Subscriptions are available?**  
