@@ -185,7 +185,7 @@ Optionally, the rollup node can provide [peer to peer synchronization](https://g
 ## Execution engine (op-geth)
 
 [*Execution engine*](https://github.com/SYS-Labs/rollux/blob/develop/specs/rollup-node.md) refers to the component in the protocol specifications. 
-The Optimism implementation is called *op-geth*.
+The Rollux implementation is called *op-geth*, just like in Optimism.
 
 The execution engine's RPC interface is identical to [the upstream Geth RPC interface](https://geth.ethereum.org/docs/rpc/server). This includes the ability to provide [snap sync](https://github.com/ethereum/devp2p/blob/master/caps/snap.md) functionality to other execution engines.
 
