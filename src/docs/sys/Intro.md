@@ -124,7 +124,7 @@ A. Refer to our replica node setup **[guide](../developers/build/run-a-node/)**.
 
 
 **Q. "What RPC/WSS Methods/Subscriptions are available?**  
-A. Refer to our **[RPC documentation](../developers/build/json-rpc/#)**.
+A. Refer to our **[RPC documentation](../developers/build/json-rpc/)**.
 
 **Q. Can you provide sample transactions of Rollux settling a batch on Syscoin NEVM and using PoDA on Syscoin Native (UTXO), and further info?**  
 A. Yes. These are testnet transactions.  
