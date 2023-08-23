@@ -1,8 +1,8 @@
 import { getDefaultLocale } from "@mr-hope/vuepress-shared";
 import ArticleIcon from "@theme/icons/ArticleIcon.vue";
-import CategoryIcon from "@mr-hope/vuepress-plugin-comment/lib/client/icons/CategoryIcon.vue";
-import TagIcon from "@mr-hope/vuepress-plugin-comment/lib/client/icons/TagIcon.vue";
-import TimeIcon from "@mr-hope/vuepress-plugin-comment/lib/client/icons/TimeIcon.vue";
+import CategoryIcon from "@mr-hope/vuepress-plugin-components/lib/client/pageinfo/icons/CategoryIcon.vue";
+import TagIcon from "@mr-hope/vuepress-plugin-components/lib/client/pageinfo/icons/TagIcon.vue";
+import TimeIcon from "@mr-hope/vuepress-plugin-components/lib/client/pageinfo/icons/TimeIcon.vue";
 import ArticleList from "@theme/components/Blog/ArticleList.vue";
 import CategoryList from "@theme/components/Blog/CategoryList.vue";
 import MyTransition from "@theme/components/MyTransition.vue";

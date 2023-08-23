@@ -45,7 +45,7 @@ const getAlias = (themeConfig, ctx) => {
             ? (0, path_1.resolve)(ctx.sourceDir, ".vuepress", custom.pageBottom)
             : noopModule,
         "@Comment": commentEnabled
-            ? "@mr-hope/vuepress-plugin-comment/lib/client/Comment.vue"
+            ? "@mr-hope/vuepress-plugin-components/lib/client/Comment.vue"
             : noopModule,
         "@NavbarStart": custom.navbarStart
             ? (0, path_1.resolve)(ctx.sourceDir, ".vuepress", custom.navbarStart)

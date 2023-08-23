@@ -1,4 +1,8 @@
 const { description } = require('../../package')
+const { themeLocales } = require('vuepress-theme-hope/node/locales')
+themeLocales['/'] = themeLocales['/en/']
+const { readingTimeLocales } = require('@mr-hope/vuepress-plugin-reading-time/lib/node/locales')
+readingTimeLocales['/'] = readingTimeLocales['/en/']
 const path = require('path')
 
 module.exports = {
@@ -33,6 +37,7 @@ module.exports = {
     pageInfo: false,
     pwa: {
       cacheHTML: false,
+      shouldPrefetch: false,
     },
     activeHash: {
       offset: -200,
@@ -421,12 +426,15 @@ module.exports = {
             '/docs/security-model/',
 
       ],
-    }
+    },
+    readingTimeLocales: readingTimeLocales,
+    locales: themeLocales,
   },
 
   plugins: [
     "@vuepress/pwa",
     [
+      '@mr-hope/vuepress-plugin-reading-time',
       '@vuepress/plugin-medium-zoom',
       {
         // When an image is inside a link, it means we don't to expand it
