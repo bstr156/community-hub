@@ -11200,20 +11200,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"optimism-hub@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "optimism-hub@workspace:."
-  dependencies:
-    "@vuepress/plugin-medium-zoom": ^1.8.2
-    "@vuepress/plugin-pwa": ^1.9.7
-    check-md: ^1.0.2
-    serve: ^14.2.0
-    vuepress: ^1.8.2
-    vuepress-plugin-plausible-analytics: ^0.2.1
-    vuepress-theme-hope: ^1.22.0
-  languageName: unknown
-  linkType: soft
-
 "optimize-css-assets-webpack-plugin@npm:^5.0.1":
   version: 5.0.8
   resolution: "optimize-css-assets-webpack-plugin@npm:5.0.8"
@@ -12842,6 +12828,20 @@ __metadata:
   checksum: 9dfa089a232346bc548bf5110e79e0cf5a2dac6fb9bf3f737a645e72795b4b4a1165d1bf86938f90805c4391e8dd571557afb901aaf81dcb82690c57737ab128
   languageName: node
   linkType: hard
+
+"rollux-hub@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "rollux-hub@workspace:."
+  dependencies:
+    "@vuepress/plugin-medium-zoom": ^1.8.2
+    "@vuepress/plugin-pwa": ^1.9.7
+    check-md: ^1.0.2
+    serve: ^14.2.0
+    vuepress: ^1.8.2
+    vuepress-plugin-plausible-analytics: ^0.2.1
+    vuepress-theme-hope: ^1.22.0
+  languageName: unknown
+  linkType: soft
 
 "run-queue@npm:^1.0.0, run-queue@npm:^1.0.3":
   version: 1.0.3
