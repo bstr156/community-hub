@@ -8,17 +8,17 @@ This means we can provide you with mainnet SYS faucets that provide enough to co
 
 ## Rollux SYS Faucets
 
-#### [Rollux Mainnet](https://rollux.id/faucet?chainId=570)
+#### 🚰[Rollux Mainnet](https://rollux.id/faucet?chainId=570)
 
-#### [Rollux Tanenbaum](https://rollux.id/faucet?chainId=57000)
+#### 🚰[Rollux Tanenbaum](https://rollux.id/faucet?chainId=57000)
 
 If for any reason the Rollux SYS faucets are unavailable, head to the [Rollux Discord](https://discord.gg/rollux) and request some SYS there. Someone will likely be willing to send you a tiny amount.
 
 ## Syscoin NEVM SYS Faucets
 
-#### [Syscoin NEVM (L1) Mainnet](https://rollux.id/faucet-nevm?chainId=57)
+#### 🚰[Syscoin NEVM (L1) Mainnet](https://rollux.id/faucet-nevm?chainId=57)
 
-#### [Syscoin NEVM (L1) Tanenbaum](https://rollux.id/faucet-nevm?chainId=5700)
+#### 🚰[Syscoin NEVM (L1) Tanenbaum](https://rollux.id/faucet-nevm?chainId=5700)
 
 ## Higher amounts of TSYS (Test SYS) for devs and projects
 
