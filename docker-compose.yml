@@ -1,0 +1,16 @@
+version: '0.1'
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: build/Dockerfile
+    image: sys-labs/community-hub-web:latest
+    entrypoint: sh build/entrypoint.sh
+    env_file:
+      - ./envs/web.env
+    expose:
+      - "8080"
+    volumes:
+      - ./dist:/app/src/.vuepress/dist
+
