@@ -16,12 +16,10 @@ If for any reason the Rollux SYS faucets are unavailable, head to the [Rollux Di
 
 ## Syscoin NEVM SYS Faucets
 
-#### [Syscoin NEVM (L1) Mainnet](https://faucet.syscoin.org)
+#### [Syscoin NEVM (L1) Mainnet](https://rollux.id/faucet-nevm?chainId=57)
 
-#### [Syscoin NEVM (L1) Tanenbaum](https://faucet.tanenbaum.io)
-
-NOTE: The NEVM faucets use social media authentication. The options are to use X ("Twitter") or Facebook to authenticate your request. The Facebook authentication works, but X have changed their API, so you cannot use this faucet with X/Twitter. A new simpler NEVM faucet is being set up, and we will provide that as soon as it's available.
+#### [Syscoin NEVM (L1) Tanenbaum](https://rollux.id/faucet-nevm?chainId=5700)
 
 ## Higher amounts of TSYS (Test SYS) for devs and projects
 
-If you need more TSYS than our faucets provide, head to the [Syscoin Discord](https://discord.gg/syscoin) and request a bulk amount of TSYS there. Someone will help you as soon as they can.
+If you need more TSYS than our faucets provide, head to the [Syscoin Discord](https://discord.gg/syscoin) and request a bulk amount of TSYS there.
