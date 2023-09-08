@@ -3,7 +3,7 @@ title: thirdweb SDK
 lang: en-US
 ---
 
-Thirdweb SDK is a library that enables developers to build web3 applications and interact with any EMV-compatible blockchain.
+Thirdweb SDK is a library that enables developers to build web3 applications and interact with any EVM-compatible blockchain.
 
 You can use the Thirdweb SDK to build apps and interact with smart contracts deployed on the Rollux network.
 
