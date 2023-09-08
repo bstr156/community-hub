@@ -373,16 +373,6 @@ module.exports = {
           collapsable: true,
         },
         {
-          title: 'Cross-domain (L1 <-> L2)',
-          children: [
-            '/docs/developers/bridge/basics.md',
-            '/docs/developers/bridge/standard-bridge.md',
-            '/docs/developers/bridge/messaging.md',
-            '/docs/developers/bridge/comm-strategies.md'
-          ],
-          collapsable: true,
-        },
-        {
           title: "Clients & SDKs",
           children: [
             '/docs/sdk/thirdweb.md',
@@ -397,15 +387,6 @@ module.exports = {
           ],
           collapsable: true,
         },
-      {title: "Specific guides",
-          children: [
-            '/docs/guides/wallet-dev.md',
-            '/docs/guides/cex-dev.md',
-            '/docs/guides/bridge-dev.md',    
-          ],
-          collapsable: true,
-      }, 
-        '/docs/developers/known-issues.md',
         '/docs/useful-tools/networks.md',
         '/docs/useful-tools/debugging.md',
         '/docs/useful-tools/faucets.md',
@@ -414,6 +395,26 @@ module.exports = {
         '/docs/useful-tools/providers.md',
         '/docs/useful-tools/oracles.md',
         '/docs/useful-tools/meta-tx.md',
+
+        {title: "Specific guides",
+        children: [
+          '/docs/guides/wallet-dev.md',
+          '/docs/guides/cex-dev.md',
+          '/docs/guides/bridge-dev.md',    
+        ],
+        collapsable: true,
+    },
+    {
+      title: 'Cross-domain (L1 <-> L2)',
+      children: [
+        '/docs/developers/bridge/basics.md',
+        '/docs/developers/bridge/standard-bridge.md',
+        '/docs/developers/bridge/messaging.md',
+        '/docs/developers/bridge/comm-strategies.md'
+      ],
+      collapsable: true,
+    },
+    '/docs/developers/known-issues.md', 
 
       ],
       '/docs/legal/': [
