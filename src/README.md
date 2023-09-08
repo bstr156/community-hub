@@ -11,21 +11,21 @@ features:
     details: Basic guides and support for connecting your wallet or using dapps
     link: /docs/help/
 
+  - title: Developer Quick Start
+    icon: book
+    details: How-to guides, docs, and tutorials for devs and power users
+    link: /docs/developers/
+
   - title: Mainnet Beta
     icon: shield
     details: Understand the security and liveness of the current phase of Rollux 
     link: /docs/security-model/
 
-  - title: Developer Quick Start
-    icon: book
-    details: How-to guides and tutorials for power users and developers
-    link: /docs/guides/
-
-  - title: Developer Docs
-    icon: code
-    details: Resources for building a decentralized application on Rollux
-    link: /docs/developers/
-
+  - title: Brand Kit
+    icon: hands-helping
+    details: The Rollux logos and branding guidelines you need
+    link: https://github.com/SYS-Labs/brand-kits/blob/main/rollux/README.md
+    
   - title: How Rollux Works 
     icon: info-square 
     details: Technical Overview of Rollux

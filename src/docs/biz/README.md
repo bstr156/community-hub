@@ -22,6 +22,10 @@ Steps to take if you would like developer support immediately, ranked in order o
 1. See our [Developer Documentation](../developers/) and [Tutorials](https://github.com/sys-labs/rollux-tutorial).
 1. Head over to `🤖│dev-support` on [Discord](https://discord.gg/rollux/) for the fastest help 
 
+## Brand Kit
+
+Go [here](https://github.com/SYS-Labs/brand-kits/blob/main/rollux/README.md) for the Rollux logos and branding guidelines you need for your project.
+
 
 ## Marketing Requests 🦸🦸
 

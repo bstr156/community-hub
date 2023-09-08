@@ -43,6 +43,7 @@ module.exports = {
       offset: -200,
     },
     mdEnhance: { container: true},
+    /*
     algolia: {
       //appId: '8LQU4WGQXA',
       //apiKey: '2c1a86142192f96dab9a5066ad0c1d50',
@@ -51,6 +52,7 @@ module.exports = {
         apiKey: 'b353349f71a345d76d653c5aaa04996f',
         indexName: 'dev_rolluxDocs'
     },
+    */
     nav: [
       /* When you update here, don't forget to update the tiles
          in src/README.md */
@@ -59,17 +61,17 @@ module.exports = {
         link: '/docs/help/'
       },      
       {
-        text: "Dev Quick Start",
-        link: '/docs/guides/'
+        text: "Developer Quick Start",
+        link: '/docs/developers/'
       },      
       {
         text: 'How Rollux Works',
         link: '/docs/protocol/',
-      },
+      },    
       {
-        text: 'Dev Docs',
-        link: '/docs/developers/',
-      },      
+        text: 'Brand Kit',
+        link: 'https://github.com/SYS-Labs/brand-kits/blob/main/rollux/README.md' 
+      },   
       {
         text: 'Project Support',
         link: '/docs/biz/'        
@@ -222,6 +224,7 @@ module.exports = {
         '/docs/governance/what-is-the-optimism-foundation.md',
         '/docs/governance/attestation-station.md' 
       ],
+      /*
       '/docs/guides/': [
         {
           title: "Beginner",
@@ -280,6 +283,7 @@ module.exports = {
         },        
 
       ],
+      */
       '/docs/help/': [
         {
           title: "Getting Started",
@@ -348,14 +352,14 @@ module.exports = {
         }
       ],
       '/docs/developers/': [
-        //'/docs/developers/releases.md',
         {
           title: 'Building on Rollux',
           children: [
             [
-              'https://github.com/sys-labs/rollux-tutorial/tree/main/getting-started#development-stacks',
-              "Development stacks"
-            ],
+              "https://github.com/sys-labs/rollux-tutorial/tree/main/getting-started",
+              "Developing smart contracts on Rollux"
+            ],            
+            '/docs/guides/nft.md',            
             '/docs/developers/build/transaction-fees.md',
             '/docs/developers/build/system-contracts.md',
             '/docs/developers/build/dev-node.md',
@@ -366,9 +370,10 @@ module.exports = {
             '/docs/developers/build/cheap-dapp.md'
 
           ],
+          collapsable: true,
         },
         {
-          title: 'Bridging L1 and L2',
+          title: 'Cross-domain (L1 <-> L2)',
           children: [
             '/docs/developers/bridge/basics.md',
             '/docs/developers/bridge/standard-bridge.md',
@@ -376,20 +381,6 @@ module.exports = {
             '/docs/developers/bridge/comm-strategies.md'
           ],
           collapsable: true,
-        },
-        '/docs/developers/known-issues.md',
-        { 
-          title: "Tools",
-          children: [
-            '/docs/useful-tools/networks.md',
-            '/docs/useful-tools/debugging.md',
-            '/docs/useful-tools/faucets.md',
-            '/docs/useful-tools/monitoring.md',
-            '/docs/useful-tools/explorers.md',
-            '/docs/useful-tools/providers.md',
-            '/docs/useful-tools/oracles.md',
-            '/docs/useful-tools/meta-tx.md',
-          ],
         },
         {
           title: "Clients & SDKs",
@@ -399,11 +390,31 @@ module.exports = {
               'https://www.ankr.com/docs/',
               "ankr SDK"
             ],
+            '/docs/sdk/viem.md',
             '/docs/sdk/web3.md',
             '/docs/sdk/ethers.md',
             '/docs/sdk/js-client.md',           
-          ]
+          ],
+          collapsable: true,
         },
+      {title: "Specific guides",
+          children: [
+            '/docs/guides/wallet-dev.md',
+            '/docs/guides/cex-dev.md',
+            '/docs/guides/bridge-dev.md',    
+          ],
+          collapsable: true,
+      }, 
+        '/docs/developers/known-issues.md',
+        '/docs/useful-tools/networks.md',
+        '/docs/useful-tools/debugging.md',
+        '/docs/useful-tools/faucets.md',
+        '/docs/useful-tools/monitoring.md',
+        '/docs/useful-tools/explorers.md',
+        '/docs/useful-tools/providers.md',
+        '/docs/useful-tools/oracles.md',
+        '/docs/useful-tools/meta-tx.md',
+
       ],
       '/docs/legal/': [
 
