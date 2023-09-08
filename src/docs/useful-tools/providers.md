@@ -12,7 +12,7 @@ Moreover, Ankr offers access to developer tooling on Rollux like SDKs and [Advan
 ### Supported Networks
 
 - [Rollux Mainnet](https://www.ankr.com/rpc/rollux)
-- [Syscoin NEVM L1 Mainnet](https://www.ankr.com/rpc/syscoin)
+- [Syscoin NEVM Mainnet](https://www.ankr.com/rpc/syscoin)
 
 
 ## ThirdWeb

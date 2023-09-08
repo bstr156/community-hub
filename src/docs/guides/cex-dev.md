@@ -1,12 +1,17 @@
 ---
-title: Adding Rollux to your centralized exchange
+title: Adding Rollux to your CEX
 lang: en-US
 ---
 
 ## Connecting to Rollux
 
-You connect to Rollux the same way you do to Syscoin NEVM or Ethereum, by connecting to a JSON RPC endpoint. 
+Typically you connect to Rollux the same way you do to Syscoin NEVM or Ethereum, by connecting to a JSON RPC endpoint.
+
+The other option is to [set up and operate your own Rollux replica node](/docs/developers/build/run-a-node).
+
+::: info 
 The supported release for Rollux is Istanbul, so it supports EIP-1559.
+:::
 
 ### Endpoints
 
@@ -14,7 +19,7 @@ The supported release for Rollux is Istanbul, so it supports EIP-1559.
 
 ### SYS balance
 
-In Rollux, SYS is used precisely the way that SYS is used in L1 Syscoin NEVM, and that ETH is used in Ethereum.
+In Rollux, SYS is used precisely the way that it is used on the L1 Syscoin NEVM (same as how ETH is used in Ethereum).
 
 ### Token addresses
 
@@ -60,7 +65,7 @@ The relevant code is [here](https://github.com/SYS-Labs/rollux-tutorial/tree/mai
 
 As a centralized exchange, there will be times that withdrawals of SYS or an ERC-20 token on either Rollux or Syscoin NEVM exceed deposits and you need to transfer assets. 
 To do that you use a bridge or a gateway. 
-We have a [standard gateway](https://rollux.com/bridge) that receives assets on L1 (Syscoin NEVM mainnet), and mints the equivalent asset on Rollux. 
+We have a [standard gateway](https://bridge.rollux.com) that receives assets on L1 (Syscoin NEVM mainnet), and mints the equivalent asset on Rollux. 
 When a user wants to withdraw the assets back to L1, the bridge burns the asset on L2 and releases it to the user on L1. If you want to use this gateway automatically, [follow this tutorial for SYS](https://github.com/SYS-Labs/rollux-tutorial/tree/main/cross-dom-bridge-eth) or [this one for ERC-20 tokens](https://github.com/SYS-Labs/rollux-tutorial/tree/main/cross-dom-bridge-erc20).
 
 Note that while L1 to L2 transactions typically take minutes, L2 to L1 transaction on the gateway require a seven day challenge period which is an artifact of Rollux being an optimistic rollup.
@@ -73,4 +78,4 @@ If you need to implement some kind of custom logic, [see this tutorial](https://
 
 ## Audit reports
 
-* For a list of audit reports, visit [GitHub](https://github.com/SYS-Labs/rollux/tree/develop/technical-documents/security-reviews). In addition to Optimism's multiple audits, Rollux has been audited to the extent of the differences between Rollux and Optimism.
+* For a list of audit reports, visit [GitHub](https://github.com/SYS-Labs/rollux/tree/develop/technical-documents/security-reviews). In addition to Optimism's multiple audits, Rollux has been audited to give full coverage to the differences between Rollux and Optimism.
