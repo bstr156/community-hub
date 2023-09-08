@@ -447,3 +447,4 @@ module.exports = {
   
 module.exports.themeConfig.sidebar["/docs/useful-tools/"] = module.exports.themeConfig.sidebar["/docs/developers/"]
 module.exports.themeConfig.sidebar["/docs/sdk/"] = module.exports.themeConfig.sidebar["/docs/developers/"]
+module.exports.themeConfig.sidebar["/docs/guides/"] = module.exports.themeConfig.sidebar["/docs/developers/"]
