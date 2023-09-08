@@ -1,5 +1,5 @@
 ---
-title: Public Endpoints (RPC & Websocket)
+title: Public RPC (HTTP & Websocket)
 lang: en-US
 ---
 
@@ -11,13 +11,13 @@ lang: en-US
 | Description | **`Mainnet`** |
 | Chain ID | **`570`** |
 | Explorer | **[https://explorer.rollux.com](https://explorer.rollux.com)** |
-| HTTP Endpoints<sup>1</sup> | Rate-limited: **`https://rpc.rollux.com`**, **`https://rollux.rpc.thirdweb.com`**  |
-| WSS Endpoints | Rate-limited: **`wss://rpc.rollux.com/wss`**
-| Contract Addresses | [link]()|
+| HTTP <sup>1</sup> | Rate-limited: **`https://rpc.rollux.com`**, **`https://rollux.rpc.thirdweb.com`**  |
+| Websocket | Rate-limited: **`wss://rpc.rollux.com/wss`**
+| Contract Addresses | [link](https://github.com/SYS-Labs/rollux/tree/develop/packages/contracts-bedrock/deployments/mainnet) |
 | Chainlist | [https://chainlist.org/chain/570](https://chainlist.org/chain/570) |
 
 ::: tip Developer Tip 
-If you are seeing rate limit issues when testing with public endpoints, we recommend signing up for [Ankr](https://ankr.com). Ankr provides both free and premium grades of Rollux RPC and WSS service for those who need more bandwidth.
+If you are seeing rate limit issues when testing with public endpoints, we recommend signing up for [Ankr](https://ankr.com). Ankr provides both free and premium grades of Rollux RPC service for those who need more bandwidth.
 :::
 
 ::: info
@@ -33,8 +33,9 @@ Such RPCs are either not supported, or will return nonsensical values.
 | Description | **`Testnet (public)`** |
 | Chain ID | **`57000`** |
 | Explorer | **[https://rollux.tanenbaum.io](https://rollux.tanenbaum.io)** |
-| HTTP Endpoint | **`https://rpc-tanenbaum.rollux.com`** |
-| WSS Endpoint | **`wss://rpc-tanenbaum.rollux.com/wss`** |
+| HTTP | **`https://rpc-tanenbaum.rollux.com`** |
+| Websocket | **`wss://rpc-tanenbaum.rollux.com/wss`** |
+| Contract Addresses| [link](https://github.com/SYS-Labs/rollux/tree/develop/packages/contracts-bedrock/deployments/goerli) |
 | Chainlist | [https://chainlist.org/chain/57000](https://chainlist.org/chain/57000)
 
 
