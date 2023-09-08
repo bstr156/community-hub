@@ -1,5 +1,5 @@
 ---
-title: Public Endpoints (RPC & Websocket)
+title: Public RPC (HTTP & Websocket)
 lang: en-US
 ---
 
@@ -13,7 +13,7 @@ lang: en-US
 | Explorer | **[https://explorer.rollux.com](https://explorer.rollux.com)** |
 | HTTP <sup>1</sup> | Rate-limited: **`https://rpc.rollux.com`**, **`https://rollux.rpc.thirdweb.com`**  |
 | Websocket | Rate-limited: **`wss://rpc.rollux.com/wss`**
-| Contract Addresses | [link]()|
+| Contract Addresses | [link](https://github.com/SYS-Labs/rollux/tree/develop/packages/contracts-bedrock/deployments/mainnet) |
 | Chainlist | [https://chainlist.org/chain/570](https://chainlist.org/chain/570) |
 
 ::: tip Developer Tip 
@@ -35,6 +35,7 @@ Such RPCs are either not supported, or will return nonsensical values.
 | Explorer | **[https://rollux.tanenbaum.io](https://rollux.tanenbaum.io)** |
 | HTTP | **`https://rpc-tanenbaum.rollux.com`** |
 | Websocket | **`wss://rpc-tanenbaum.rollux.com/wss`** |
+| Contract Addresses| [link](https://github.com/SYS-Labs/rollux/tree/develop/packages/contracts-bedrock/deployments/goerli) |
 | Chainlist | [https://chainlist.org/chain/57000](https://chainlist.org/chain/57000)
 
 
