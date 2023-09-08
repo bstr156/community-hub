@@ -42,6 +42,7 @@ module.exports = {
     activeHash: {
       offset: -200,
     },
+    mdEnhance: { container: true},
     algolia: {
       //appId: '8LQU4WGQXA',
       //apiKey: '2c1a86142192f96dab9a5066ad0c1d50',
@@ -378,7 +379,7 @@ module.exports = {
         },
         '/docs/developers/known-issues.md',
         { 
-          title: "Useful Tools",
+          title: "Tools",
           children: [
             '/docs/useful-tools/networks.md',
             '/docs/useful-tools/debugging.md',
@@ -387,36 +388,22 @@ module.exports = {
             '/docs/useful-tools/explorers.md',
             '/docs/useful-tools/providers.md',
             '/docs/useful-tools/oracles.md',
-            '/docs/useful-tools/meta-tx.md'
-            //['https://www.optimism.io/apps/tools', 'Third Party Tools'],
+            '/docs/useful-tools/meta-tx.md',
           ],
         },
         {
-          title: "SDK",
+          title: "Clients & SDKs",
           children: [
-            '/docs/sdk/js-client.md',
+            '/docs/sdk/thirdweb.md',
             [
-              'https://github.com/SYS-Labs/rollux/tree/develop/packages/contracts/docs',
-              'Rollux Contracts'
+              'https://www.ankr.com/docs/',
+              "ankr SDK"
             ],
-            [
-              'https://www.ankr.com/docs/#advanced-apissdks',
-              'Ankr API/SDK'
-            ],           
+            '/docs/sdk/web3.md',
+            '/docs/sdk/ethers.md',
+            '/docs/sdk/js-client.md',           
           ]
         },
-        '/docs/developers/media.md',
-        {
-          title: "OP Stack: Bedrock",
-          children: [
-            '/docs/developers/bedrock/explainer.md',
-            '/docs/developers/bedrock/differences.md',
-            '/docs/developers/bedrock/public-testnets.md',
-            '/docs/developers/bedrock/node-operator-guide.md',
-            '/docs/developers/bedrock/upgrade-guide.md',
-            '/docs/developers/bedrock/metrics.md'
-          ]
-        }
       ],
       '/docs/legal/': [
 
@@ -447,3 +434,4 @@ module.exports = {
 }
   
 module.exports.themeConfig.sidebar["/docs/useful-tools/"] = module.exports.themeConfig.sidebar["/docs/developers/"]
+module.exports.themeConfig.sidebar["/docs/sdk/"] = module.exports.themeConfig.sidebar["/docs/developers/"]

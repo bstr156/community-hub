@@ -1,5 +1,5 @@
 ---
-title: SDK
+title: Clients & SDKs
 lang: en-US
 ---
 
