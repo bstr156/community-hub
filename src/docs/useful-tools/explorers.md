@@ -7,12 +7,12 @@ lang: en-US
 
 Blockscout provides verified contract source code, along with the ability to interact with it, and detailed transaction information.
 
-Blockscout is available for both Rollux networks:
+Available for both Rollux networks:
 
-- [Rollux Mainnet](https://explorer.rollux.com)
-- [Rollux Tanenbaum (testnet)](https://rollux.tanenbaum.io)
+- [Blockscout for Rollux Mainnet](https://explorer.rollux.com)
+- [Blockscout Rollux Tanenbaum (testnet)](https://rollux.tanenbaum.io)
 
-There are also Blockscout explorers available for the Syscoin NEVM Layer 1:
+Aailable for the Syscoin NEVM Layer 1:
 
 - [Blockscout for Syscoin NEVM mainnet](https://explorer.syscoin.org)
 - [Blockscout for Syscoin NEVM Tanenbaum (testnet)](https://tanenbaum.io)

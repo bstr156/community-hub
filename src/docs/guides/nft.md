@@ -5,8 +5,6 @@ lang: en-US
 
 An NFT ecosystem consists of creators (supply), marketplaces, and buyers/traders (demand) built on top of infrastructures that enable algorithmic generation of art, and deployment of smart contracts.
 
-## The Rollux NFT ecosystem is just getting started!
-
 <!--- ![The Optimism NFT ecosystem](../../assets/docs/guides/nft/OP-NFT-Ecosystem.jpg)
 
 These tools are available on Optimism:
@@ -46,35 +44,21 @@ It is accurate, as far as we know, when written (early January 2023), but new fe
 
 --->
 
-That means Rollux represents a great opportunity to get in at the ground level of an emerging NFT ecosystem.
+### Luxy Marketplace
 
-### [Luxy](https://luxy.io) Marketplace
+[Luxy.io](https://luxy.io) is multichain and makes it very easy to create NFTs, collections, and provides a robust marketplace with leading-edge features to sell them. Luxy provides a state-of-the-art [launchpad](https://luxy.io/launchpad), along with tools for creators. Check out Luxy's [documentation portal](https://docs.luxy.io/help-center/) to learn more.
 
-Luxy is Rollux's official NFT marketplace. Luxy is multichain and provides a state-of-the-art [launchpad](https://luxy.io/launchpad), along with tools for creators. Check out Luxy's [documentation portal](https://docs.luxy.io/help-center/) to learn a lot more.  
+### NFTs2Me
 
-Join the Luxy community!  
+[NFTs2Me](https://nfts2me.com) is a no-code NFT toolset on Rollux that makes the process of creating, deploying, and minting your NFT collections as simple and straightforward as possible, while providing advanced and unique functionalities. Provides extensive tools that help you from start to finish, starting with algorithmic art generation, to smart contracts, snapshots, airdrops, phased sales, and even token gating for your community. 
 
-[Twitter](https://twitter.com/Luxy_io)  
-[Discord](https://discord.gg/luxy)  
-[Instagram](https://instagram.com/luxy_nft)  
-[Telegram](https://t.me/luxyio)  
-[Medium](https://medium.com/@luxy-io)  
+### thirdweb
 
+[Thirdweb](https://thirdweb.com/rollux) provides no-code deployments for a wide variety of frequently-deployed [smart contracts](https://thirdweb.com/explore) that you can use on Rollux, including for ERC-721 and ERC-1155 tokens and NFTs, NFT marketplaces, drops, and a ton more. 
 
-<!---
-### Transaction aggregator
+### Ankr Advanced API/SDK
 
-- [Bluesweep](https://www.bluesweep.xyz/)
-
-### Liquidity 
-
-- [Backed](https://www.withbacked.xyz/network/optimism) lets you use NFTs as collateral
-
---->
-
-### NFT data API
-
-- [Ankr](https://www.ankr.com/docs/advanced-api/quickstart/overview/)
+[Ankr](https://www.ankr.com/docs/advanced-api/quickstart/overview/) provides some very useful functionalities and queries that power NFT-focused dapps on Rollux.
 
 
 
