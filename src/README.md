@@ -7,13 +7,13 @@ heroText: false
 
 features:
   - title: Help Center
-    icon: book
+    icon: hands-helping
     details: Basic guides and support for connecting your wallet or using dapps
     link: /docs/help/
 
   - title: Developer Quick Start
-    icon: book
-    details: How-to guides, docs, and tutorials for devs and power users
+    icon: hammer
+    details: How-to guides, docs, and tools for devs and power users
     link: /docs/developers/
 
   - title: Mainnet Beta
@@ -40,11 +40,6 @@ features:
     icon: ruler-triangle
     details: More detailed information about how Rollux works under the hood
     link: /docs/protocol/
-
-  - title: Tools for Developers
-    icon: hammer
-    details: Useful third-party tools for easier development and deployment
-    link: /docs/useful-tools/
 
   - title: Syscoin L1
     icon: ruler-triangle
