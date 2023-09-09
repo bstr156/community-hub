@@ -7,7 +7,7 @@ lang: en-US
 
 Typically you connect to Rollux the same way you do to Syscoin NEVM or Ethereum, by connecting to a JSON RPC endpoint.
 
-The other option is to [set up and operate your own Rollux replica node](/docs/developers/build/run-a-node).
+The other option is to [set up and operate your own Rollux replica node](..developers/build/run-a-node).
 
 ::: info 
 The supported release for Rollux is Istanbul, so it supports EIP-1559.
