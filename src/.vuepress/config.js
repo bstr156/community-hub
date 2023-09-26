@@ -25,6 +25,7 @@ module.exports = {
 
     contributor: false,
     hostname: 'https://sys-labs.github.io',
+    base: '/community-hub/',
     logo: '/assets/logos/logo.png',
     docsDir: 'src',
     docsRepo: 'https://github.com/sys-labs/community-hub',
