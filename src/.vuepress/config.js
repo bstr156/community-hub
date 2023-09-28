@@ -24,7 +24,7 @@ module.exports = {
   themeConfig: {
 
     contributor: false,
-    hostname: 'https://docs.rollux.com',
+    hostname: 'https://sys-labs.github.io',
     base: '/',
     logo: '/assets/logos/logo.png',
     docsDir: 'src',
