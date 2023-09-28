@@ -25,7 +25,7 @@ module.exports = {
 
     contributor: false,
     hostname: 'https://docs.rollux.com',
-    base: '/community-hub/',
+    base: '/',
     logo: '/assets/logos/logo.png',
     docsDir: 'src',
     docsRepo: 'https://github.com/sys-labs/community-hub',
