@@ -8,7 +8,6 @@ const path = require('path')
 module.exports = {
   title: 'Rollux Docs',
   description: description,
-  base: '/community-hub/',
 
   head: [ 
     ['link', { rel: 'manifest', href: '/manifest.json' }],
