@@ -1,7 +1,10 @@
 #!/usr/bin/env bash
 
+yarn vuepress -v >/dev/null 2>&1;
+vuepress_missing=$?
+
 # Install again if vuepress not available
-if command -v vuepress >/dev/null 2>&1; then
+if [ $vuepress_missing -ne 0 ]; then
 	yarn install
 fi
 
