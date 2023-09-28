@@ -12,5 +12,6 @@ services:
     expose:
       - "8080"
     volumes:
+      - .:/app/
       - ./dist:/app/src/.vuepress/dist
 
