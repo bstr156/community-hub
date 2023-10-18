@@ -31,18 +31,22 @@ If you're new to Rollux, the recommended wallets from the community are:
 [**Metamask**](https://metamask.io) (Mobile (iOS, Android), and browser extension (Chrome, Firefox))  
 
 
-## Step 2 - Add Rollux to your wallet (optional)
-The Rollux network is already available in Pali Wallet by default, so if you choose to [install and use Pali](connect-pali.md) you can skip this step! Otherwise, to add Rollux to MetaMask follow this [guide](connect-metamask.md).
+## Step 2 - Add the Rollux Network to your wallet
+You can skip this step if you choose to [install and use Pali Wallet](connect-pali.md)! For other wallets like MetaMask, you can add the Rollux network by following this [guide](connect-metamask.md).
 
 
 
 ## Step 3 - Fund your wallet with SYS
-To try an app on Rollux you'll need SYS to pay for transaction fees. You can deposit SYS directly onto Rollux from a debit or credit card, an exchange, or from Syscoin NEVM by using a bridge.
 
-There are three main options to get SYS into your wallet on Rollux:
+There are three main options to get SYS into your Rollux wallet:
 
-**Centralized Exchange (recommended for ease-of-use)**  
-You can buy SYS from a growing list of exchanges that support the Rollux network.
+### Fiat on-ramp
+You can get SYS on-demand with your credit/debit card, or other legacy payment methods.
+
+-  [Buy SYS on Coinify](https://mycoinify.com/trade/?targetPage=buy&coin=SYSROLLUX). A super easy way to get SYS on Rollux fast by using your VISA, Mastercard, Apple Pay, or SEPA.
+
+### Centralized exchange
+You can buy SYS from a growing list of centralized exchanges that support the Rollux network.
 
 -  [Bitmart](https://bitmart.com)
 -  [DigiFinex](https://digifinex.com)  
@@ -51,19 +55,33 @@ You can buy SYS from a growing list of exchanges that support the Rollux network
 
 When you withdraw your SYS from any of the above exchanges, select Rollux as the network you are withdrawing to and provide your wallet address that begins with "0x".
 
-There are also exchanges that support Syscoin NEVM (Rollux's Layer 1) such as [KuCoin](https://kucoin.com). You can get SYS from those too! However, after withdrawing your SYS to Syscoin NEVM you will need to use Rollux's canonical bridge called [Rollux Portal](https://rollux.com/bridge) to get your SYS onto Rollux.
+::: tip
+For the easiest centralized exchange experience, use one of the above exchanges that let you withdraw SYS directly to Rollux.
+:::
 
-**Bridge your SYS or other assets from Syscoin NEVM to Rollux**  
-Our canonical bridge is called [Rollux Portal](https://rollux.com/bridge). It makes it easy to move your SYS (or other digital assets) from Syscoin NEVM to Rollux!
+::: info
+Some exchanges offer SYS but do not yet support the Rollux network. You can get SYS from those too but you will need to move it to Rollux yourself.
 
-**Get SYS on demand with your credit/debit card, Apple Pay, or other legacy payment methods**  
-Coming soon! Check back for an easy on-ramp!
+Examples:
 
-## You're all set! Now explore the [Rollux ecosystem](https://rollux.com/ecosystem)!
-Made it this far? Congrats! 🎉 You now have a wallet that's funded and setup to use Rollux. 
+[KuCoin](https://kucoin.com) only supports withdrawing SYS to **Syscoin NEVM**.  To get your KuCoin SYS onto Rollux, see section "Bridge your SYS to Rollux from Syscoin NEVM" below for instructions.
+
+[Binance](https://binance.com) only supports withdrawing SYS to **Syscoin UTXO**. See section "Bridge your SYS to Rollux from Syscoin UTXO" below for instructions.  
+  
+**A full list of SYS exchanges with the networks they support is available on Syscoin's [Get SYS](https://syscoin.org/get-sys#exchanges) page.**  
+:::
+
+### Bridge your SYS to Rollux from Syscoin NEVM
+Follow this [tutorial](./using-rollux-portal.md) to get started using Rollux Portal. It makes it easy to move your SYS (or other digital assets) from Syscoin NEVM to Rollux!
+
+### Bridge your SYS to Rollux from Syscoin UTXO
+Once your SYS is in Pali Wallet (browser extension, not mobile), you can use the [Syscoin Bridge](https://bridge.syscoin.org) to move your SYS to Syscoin NEVM.  Once your SYS is on NEVM, proceed to the [Rollux Portal](https://bridge.rollux.com) to move your SYS to Rollux. 
+
+## Got SYS in your Rollux wallet? You're all set!
+Congrats! 🎉 You're set up to use Rollux.  
+Now explore the [Rollux ecosystem](https://rollux.com/ecosystem)! 
 
 ## Rollux Mainnet network details
-
 Some wallets might require you to enter network details manually. If you need those details for Rollux Mainnet, they are as follows:  
 
 | Field | Content |

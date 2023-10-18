@@ -18,4 +18,4 @@ yarn.lock
 deploy-test.sh
 deploy-prod.sh
 yarn.lock
-
+notes.txt
