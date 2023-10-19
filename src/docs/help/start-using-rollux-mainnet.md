@@ -43,7 +43,7 @@ There are three main options to get SYS into your Rollux wallet:
 ### Fiat on-ramp
 You can get SYS on-demand with your credit/debit card, or other legacy payment methods.
 
--  [Buy SYS on Coinify](https://mycoinify.com/trade/?targetPage=buy&coin=SYSROLLUX). A super easy way to get SYS on Rollux fast by using your VISA, Mastercard, Apple Pay, or SEPA.
+-  [Buy SYS on Coinify](https://mycoinify.com/trade/?targetPage=buy&coin=SYSROLLUX) with VISA, Mastercard, Apple Pay, or SEPA.
 
 ### Centralized exchange
 You can buy SYS from a growing list of centralized exchanges that support the Rollux network.
