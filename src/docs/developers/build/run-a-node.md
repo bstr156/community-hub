@@ -30,6 +30,7 @@ Before running `make`,  do the following.
 Edit configuration file `ops-bedrock/docker-compose.rollux.yml`:
 
 1.  Replace `--sequencer.enabled` with `--sequencer.stopped`
+1.  If you are running a load balancer, set `--p2p.advertise.ip ` to specify its IP address for better peering
 1.  Set `--p2p.static=/ip4/{ipAddress}/tcp/9003/p2p/{peerID}`. Contact Syscoin Foundation to get the {ipAddress} and your specific {peerID}.
 
 Edit configuration file `ops-bedrock/envs/p2p-node-rollux.env`:
