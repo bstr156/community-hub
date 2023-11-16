@@ -22,6 +22,7 @@ Here you will find guides and tutorials that help with the most common needs, fr
 
 [How do I use Rollux Portal (aka the Rollux bridge)](using-rollux-portal.md)
 
+[How do I move SYS from Syscoin UTXO to Rollux (aka the Syscoin Bridge)](utxo-to-rollux.md)
 
 ## Have questions? [**Get Support**](get-support.md).
 
