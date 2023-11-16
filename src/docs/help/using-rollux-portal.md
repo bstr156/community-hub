@@ -1,5 +1,5 @@
 ---
-title: How do I move SYS or Assets from Syscoin NEVM to Rollux? (Rollux Portal)
+title: How do I move SYS or Tokens from Syscoin NEVM to Rollux? (Rollux Portal)
 lang: en-US
 ---
 

@@ -296,10 +296,12 @@ module.exports = {
           collapsable: true,
         },
         {
-          title: "Using the Rollux Ecosystem",
+          title: "Bridging SYS or Tokens to Rollux",
           children: [
+            '/docs/help/third-party-bridges.md',
             '/docs/help/using-rollux-portal.md',
-            '/docs/help/utxo-to-rollux.md'
+            '/docs/help/utxo-to-rollux.md',
+
           ],
           collapsable: true,
         },

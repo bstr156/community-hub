@@ -11,8 +11,8 @@ Once your SYS is on Rollux, you will be able to use your SYS in a growing ecosys
 There are a few options for moving SYS from Syscoin's UTXO (native) chain to Rollux!  
   
 ### Use a centralized exchange that supports both UTXO and Rollux
-Difficulty: Easy
-Decentralized: No
+Difficulty: Easy  
+Decentralized: No  
 
 Some exchanges support both the UTXO and Rollux networks. Those exchanges can be used to move your SYS from UTXO to Rollux. Check Syscoin's [Get SYS](https://syscoin.org/get-sys) page to see which ones support both networks.
 
@@ -24,8 +24,8 @@ Note: Exchanges are third-party providers. No one other than an exchange itself 
 
 
 ### Use the Syscoin Bridge, then use the Rollux Portal 
-Difficulty: Moderate
-Decentralized: Yes
+Difficulty: Moderate  
+Decentralized: Yes  
 
 The Syscoin Bridge and Rollux Portal are the canonical bridges of our ecosystem.
 
