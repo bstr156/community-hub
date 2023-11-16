@@ -3,9 +3,16 @@ title: How do I use Rollux Mainnet with Pali Wallet?
 lang: en-US
 ---
 
-Managing assets on Rollux (or any other Ethereum-style network) means you will need a wallet to interact with the blockchain. Our community mainly recommends Pali Wallet. Pali is already set up to use Rollux and provides mobile and browser versions. Here are the steps to get started using Pali with Rollux inside a web browser (i.e. when running on a desktop: Windows, MacOS, or Linux).
+Managing assets on Rollux (or any other Ethereum-style network) means you will need a wallet to interact with the blockchain. Our community mainly recommends Pali Wallet. Pali is already set up to use Rollux and it's available as a **mobile app** and as a **browser extension**. Here are the steps to get started using Pali with Rollux.
 
-## Download & Install Pali Wallet
+::: info
+**Looking for the Pali Mobile Wallet?**
+It is available in Apple's [App Store](https://apps.apple.com/app/pali-wallet-dex-nft-defi/id6447639615) and in Google's [Play Store](https://play.google.com/store/apps/details?id=io.paliwallet) for Android devices!
+:::
+
+## How to download & install the Pali Wallet browser extension
+(Windows, MacOS, Linux)
+ 
 
 1.  Head to the [Pali Wallet](https://paliwallet.com) official website
 
