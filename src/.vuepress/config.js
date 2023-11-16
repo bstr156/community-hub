@@ -298,7 +298,8 @@ module.exports = {
         {
           title: "Using the Rollux Ecosystem",
           children: [
-            '/docs/help/using-rollux-portal.md'
+            '/docs/help/using-rollux-portal.md',
+            '/docs/help/utxo-to-rollux.md'
           ],
           collapsable: true,
         },
