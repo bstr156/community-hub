@@ -6,6 +6,11 @@ lang: en-US
 Managing assets on Rollux (or any other Ethereum-style network) means you will need a wallet to interact with the blockchain. Our community mainly recommends Pali Wallet. Pali is already set up to use Rollux and it's available as a **mobile app** and as a **browser extension**. Here are the steps to get started using Pali with Rollux.
 
 ::: info
+**Is your SYS on the Syscoin UTXO chain?  Use the Pali browser extension.**
+If yes, we recommend using the browser extension version of Pali, as it supports UTXO and is compatible with the Syscoin Bridge. The mobile version of Pali does not yet support Syscoin UTXO, but it does support Syscoin NEVM and Rollux.
+:::
+
+::: info
 **Looking for the Pali Mobile Wallet?**
 It is available in Apple's [App Store](https://apps.apple.com/app/pali-wallet-dex-nft-defi/id6447639615) and in Google's [Play Store](https://play.google.com/store/apps/details?id=io.paliwallet) for Android devices!
 :::
