@@ -18,11 +18,14 @@ Here you will find guides and tutorials that help with the most common needs, fr
 [How do I start using Rollux Testnet?](start-using-rollux-testnet.md)
 
 
-### Bridging SYS and Assets to Rollux
+### Bridging SYS and Tokens to Rollux
 
-[How do I move SYS or Assets from Syscoin **NEVM** to Rollux](using-rollux-portal.md)
+[How do I move tokens from other ecosystems to Rollux?](third-party-bridges.md)
 
-[How do I move SYS from Syscoin **UTXO** to Rollux](utxo-to-rollux.md)
+[How do I move SYS and tokens from Syscoin **NEVM** to Rollux?](using-rollux-portal.md)
+
+[How do I move SYS from Syscoin **UTXO** to Rollux?](utxo-to-rollux.md)
+
 
 ## Have questions? [**Get Support**](get-support.md).
 
