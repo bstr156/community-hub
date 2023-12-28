@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[99],{676:function(t,n,e){"use strict";e.r(n);var o={mounted(){window.location.href="/docs/protocol/#decentralizing-the-sequencer"}},s=e(2),l=Object(s.a)(o,(function(){return(0,this._self._c)("ContentSlotsDistributor",{attrs:{"slot-key":this.$parent.slotKey}})}),[],!1,null,null,null);n.default=l.exports}}]);
