@@ -41,27 +41,50 @@ SupraOracles price feeds on Rollux are subsidized by the Syscoin Foundation! Thi
 
 ### Price Feeds
 
-Rollux Mainnet: [`0x8a358F391d93f7558D5F5E61BDf533e2cc3Cf7a3`](https://explorer.rollux.com/address/0x8a358F391d93f7558D5F5E61BDf533e2cc3Cf7a3)
-See [market pairs](https://supraoracles.com/docs/price-feeds/trading-pairs)
+[Data Dashboard](https://supraoracles.com/docs/price-feeds/data-feeds-catalog)
 
-Syscoin NEVM (L1) Mainnet: [`0x8a358F391d93f7558D5F5E61BDf533e2cc3Cf7a3`](https://explorer.syscoin.org/address/0x8a358F391d93f7558D5F5E61BDf533e2cc3Cf7a3)
-See [market pairs](https://supraoracles.com/docs/price-feeds/trading-pairs)
+[Price Feed Catalog](https://supraoracles.com/docs/price-feeds/data-feeds-catalog)  
+  
+  
+**Pull model:**  
+Supra Pull oracle provides low latency on-demand price feed updates needed for special use cases like perpetual DEXs and its open for everyone.
 
+[How to integrate pull model](https://supraoracles.com/docs/price-feeds/pull-model)
 
-Rollux Tanenbaum (Testnet): [`0xd48883758f32BA2b2a4ebF6b8238304e3bf10507`](https://rollux.tanenbaum.io/address/0xd48883758f32BA2b2a4ebF6b8238304e3bf10507)
-See [market pairs](https://supraoracles.com/docs/price-feeds/trading-pairs)
+Rollux Mainnet: [`0xa64E1313B6e104f2A3A14D0962CEB32acAA72012`](https://explorer.rollux.com/address/0xa64E1313B6e104f2A3A14D0962CEB32acAA72012/internal-transactions#address-tabs) 
 
-Syscoin NEVM (L1) Tanenbaum (Testnet): [`0x7f003178060af3904b8b70fEa066AEE28e85043E`](https://tanenbaum.io/address/0x7f003178060af3904b8b70fEa066AEE28e85043E)
-See [market pairs](https://supraoracles.com/docs/price-feeds/trading-pairs)
+Syscoin NEVM (L1) Mainnet: [`0x7Bf7646CfA1a1EBEd4436E53ab2cB95C7d16824D`](https://explorer.syscoin.org/address/0x7Bf7646CfA1a1EBEd4436E53ab2cB95C7d16824D/internal-transactions#address-tabs)
 
-[Get Started Integrating with SupraOracles Price Feeds](https://supraoracles.com/docs/price-feeds/decentralized)
+Rollux Tanenbaum (Testnet): [`0x6Cd59830AAD978446e6cc7f6cc173aF7656Fb917`](https://rollux.tanenbaum.io/address/0x6Cd59830AAD978446e6cc7f6cc173aF7656Fb917/internal-transactions#address-tabs)
+
+Syscoin NEVM (L1) Tanenbaum (Testnet): [`0x6Cd59830AAD978446e6cc7f6cc173aF7656Fb917`](https://tanenbaum.io/address/0x6Cd59830AAD978446e6cc7f6cc173aF7656Fb917/internal-transactions#address-tabs)
+  
+  
+**Push model:**  
+Supra's Push oracle publishes prices on chain at low frequencies enabling consumers to read near real time prices on chain.
+
+[How to integrate push model](https://supraoracles.com/docs/price-feeds/decentralized)
+
+Rollux Mainnet: [`0xbc0453F6FAC74FB46223EA5CC55Bd82852f0C670`](https://explorer.rollux.com/address/0xbc0453F6FAC74FB46223EA5CC55Bd82852f0C670/internal-transactions#address-tabs)
+
+Syscoin NEVM (L1) Mainnet: [`0x933fA8303C3C8d2676fdDa40ca0492AF46058580`](https://explorer.syscoin.org/address/0x933fA8303C3C8d2676fdDa40ca0492AF46058580/internal-transactions#address-tabs)
+
+Rollux Tanenbaum (Testnet): [`0x14Dbb98a8e9A77cE5B946145bb0194aDE5dA7611`](https://rollux.tanenbaum.io/address/0x14Dbb98a8e9A77cE5B946145bb0194aDE5dA7611/internal-transactions#address-tabs)
+
+Syscoin NEVM (L1) Tanenbaum (Testnet): [`0x8Ba43C9D8eF6d372582b851B4BE8d8975BA4D9f8`](https://tanenbaum.io/address/0x8Ba43C9D8eF6d372582b851B4BE8d8975BA4D9f8/internal-transactions#address-tabs)
+
 
 ### Supra VRF (RNG)
 
-Rollux Tanenbaum (Testnet): [`0xA983910583AB6b9C54e88D32512FF8aE0A56A025`](https://rollux.tanenbaum.io/address/0xA983910583AB6b9C54e88D32512FF8aE0A56A025)
+On-chain and off-chain applications connected to gaming, lottery and sampling rely heavily on entropy. It could be a dynamic NFT mint, loot boxes, random opponent pairing, randomized spawn environments, an in-game item upgrade, a lottery or a selection of contributors for an IDO.  
 
-[Get Started with Supra VRF](https://supraoracles.com/docs/vrf1)
+Supra’s VRF can provide the exact properties required for a random number generator (RNG) to be fair with tamper proof, unbiased and cryptographically verifiable random numbers to be employed by smart contracts.
 
+[Learn more](https://supraoracles.com/docs/vrf) about Supra VRF and get intergrated.
+
+VRF V2 Router Contract (V2) on Rollux Mainnet : [`0xc489aE6CEeBF5e17676a3B2A8A81e45B4Ba01a78`](https://rollux.tanenbaum.io/address/0xc489aE6CEeBF5e17676a3B2A8A81e45B4Ba01a78/internal-transactions#address-tabs)
+
+VRF V2 Deposit Contract (V2) on Rollux Mainnet : [`0xD8a459e3B7dB86Dc210031F38BaBc730b72BAbcD`](https://rollux.tanenbaum.io/address/0xD8a459e3B7dB86Dc210031F38BaBc730b72BAbcD/internal-transactions#address-tabs)
 
 
 <!---
