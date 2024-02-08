@@ -15,11 +15,15 @@ The base layer required a working mechanism for decentralized finality, hash-bas
 
 You can view the difference between Rollux's and Optimism's approaches to data availability firsthand by viewing this Github commit: [https://github.com/sys-labs/rollux/commit/25a4c9410ddae31ff7195f67495491f71e684e03](https://github.com/sys-labs/rollux/commit/25a4c9410ddae31ff7195f67495491f71e684e03). You can also view the full diff here: [https://github.com/ethereum-optimism/optimism/compare/develop...sys-labs:rollux:develop](https://github.com/ethereum-optimism/optimism/compare/develop...sys-labs:rollux:develop).
 
+<div align="center">
+<img width="800" src="../../assets/docs/sys/poda.png">
+</div>
+
 The gist of the integration is summed as follows. This allows us to easily integrate PoDA into any rollup systematically. You can follow the graphic above with the explanation of the numbered sequences below.
 
 1. The `sequencer` (responsible for preserving the order of the unsafe blocks on the rollup, and enabling data availability) sends raw transactions to PoDA (on our UTXO chain) which confirms the blob via its Keccak hash. Data lookup can be performed in the NEVM via a precompile by its Keccak hash. It would create blobs (for now it creates just 1 per L2 block) but theoretically the sequencer can create multiple blobs at once.
 
-2. An ancillary service is running to get the blob data from the UTXO chain to throw it in an `indexer`. Anyone can do this, and only one honest person needs to do this for the design to remain censorship resistant. We use Cloudflare R2 which is a distributed database for our initial bedrock release.
+2. An ancillary service is running to get the blob data from the UTXO chain to throw it in an `indexer`. Anyone can do this, and only one honest person needs to do this for the design to remain censorship resistant. Initially we used Cloudflare R2 which is a distributed database for our first bedrock release. Shortly after we added Filecoin with permanence via Lighthouse for redundant archiving. Any storage providers can be used.
 
 3. Upon confirmation of the blob, the batcher calls a smart contract for data lookup to ensure the blob is available on the network. In Bedrock’s case, we called this `BatchInbox.sol`. Simply put, it allows an array of Keccak hashes to be passed in via standard calldata. It loops to check they exist on the network via a precompile. The data availability is now preserved and the hash of the data is stored in the calldata of the call to the smart contract that verifies the data exists. Theoretically since it can process an array of hashes you can process multiple blobs here. Note that the UTXO chain can process up to 32 blobs of 2MB each but if you process more than that you simply need to wait for confirmation for all of the blobs prior to checking for confirmation of the data via BatchInbox.sol.
 
@@ -57,11 +61,6 @@ Why does Ethereum employ a KZG polynomial commitment scheme, rather than using K
 Due to Ethereum's sharding architecture, validators hold only a fraction of the data in segments (similar to how nodes in a traditional distributed database store only a small part of the entire database). Ethereum requires an effective method to verify that these individual segments are valid pieces of the whole and to confirm the data's accuracy. This is important for ZK (validity proof) rollups for which data hashes are fed to the ZK verifier to confirm they are processing state correctly.
 
 Within ZK rollups, it is expensive to check KZG commitments directly. This is due to the number of constraints within the ZK circuit.  There is a simple way to check if two totally separate commitments map to the same data input, using the equivalence protocol. Ideally, the commitment scheme should be hash-based to avoid trusted setups and ensure quantum safety. However, most of the hash algorithms used in ZK circuits are new and completely untested in the real world (their security is not proven). Ideally, the commitment scheme should be hash-based to eliminate trusted setups and make it quantum-safe. However, most hash algorithms employed in ZK circuits are novel and untested in real-world scenarios (their security is unproven). It is likely that they would prefer to use the merkle-root SHA256 hash-based scheme, but it is incompatible with the sharding design philosophy! For Ethereum, KZG is the most efficient solution, but it comes with a trusted setup! In contrast, sharding is not a concern for Syscoin, which allows for some substantial benefits.
-
-<div align="center">
-<img width="800" src="../../assets/docs/sys/poda.png">
-</div>
-
 
 In addition, this is also much better performance-wise, even considering that Syscoin’s full nodes check the entire set of data at every block for data availability. Syscoin provides up to 64 megabytes per block and up to 32 blobs (2 megabytes each) of space available per block (2.5 minutes on average). The blob size fits nicely within our existing fee-market on Syscoin’s native UTXO chain. We simply discount the weight of the block by 100x. That is to say a full block of 64 megabytes accounts for 640kb, leaving 360kb of effective weight in a 1MB block for regular transactions. The fee-market for blobs is discounted 100x from regular transactions, while the rest of the fee-market logic remains consistent with bitcoin mechanics tried and tested over a number of years. In Ethereum’s alternative sharded setup, 32 blobs of 2 MB each are aggregated in a KZG verification which takes roughly 3 seconds (about 2 seconds for each individual blob), while Syscoin’s Keccak-based blob takes about 1 millisecond to check. That corresponds to 2000x in performance savings (2000ms per blob vs 1ms per blob). 
 
