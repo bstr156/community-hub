@@ -5,6 +5,8 @@ lang: en-US
 
 ## Optimistic Rollup with PoDA (Proof of Data Availability)
 
+This is a high level overview of PoDA and its architecture. If you are looking for more specific documentation or instructions for using PoDA, head to [Syscoin's PoDA documentation](https://docs.syscoin.org/docs/tech/poda).
+
 The general [design](Design.md) for a layer 2 using PoDA on Syscoin layer 1 can be applied with ZK-based rollups (we have prototyped this with Hermez zkEVM) the same as we have applied with Optimism Bedrock. Since optimistic rollups have some advantages over zkEVM right now due to the overhead of ZK proving, we chose to integrate with Bedrock to begin, and will introduce a hybrid solution likely along the lines of Bedrock/Hermez/zkSync upon emergence of hardware-efficient ZK proving solutions. We feel the Bedrock design is currently the cleanest, most secure and efficient of any of the many rollup designs today.
 
 <div align="center">
@@ -72,6 +74,5 @@ Given the fact that we use a compact block based strategy to disseminate blocks 
 
 The final piece to understand PoDA is how the protocol removes raw data after network participants have had the opportunity to archive it. Upon receipt of a new [chainlock](https://docs.syscoin.org/docs/tech/finality), the protocol prunes data older than or equal to six hours of age from the time of the previous chainlock. Since the previous chainlock is effectively the guaranteed finality of the chain, we depend upon it for data removal. The age of the data is based on the time difference between the last guaranteed finality, and the median time-stamp of the block that included the data blob.
 
-### Read More
+### [PoDA documentation and instructions](https://docs.syscoin.org/docs/tech/poda)
 
-[More PoDA documentation](https://docs.syscoin.org/docs/tech/poda)
