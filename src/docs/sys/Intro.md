@@ -44,7 +44,7 @@ Syscoin is [merge-mined](https://docs.syscoin.org/docs/tech/merged-mining) by Bi
 However, Syscoin does not mirror Bitcoin's economics and consensus rules. Syscoin's economy is utility-focused and based upon [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559). We source Bitcoin’s network for the hardness it provides and pass that on to rollups! 
 
 ### [Finality](Finality.md) that is Decentralized and Fault Tolerant
-Syscoin’s finality is sourced from a multi-quorum consisting of 4 groups of 400 Sentry nodes (1,600) which are randomly selected among the entirety of the network (currently ~2,500 MNs). Each quorum is reformed every few hours. 3 out of 4 quorums must agree on a block in order to establish a chainlock.
+Syscoin’s finality is sourced from a multi-quorum consisting of 4 groups of 400 Sentry nodes (1,600) which are randomly selected among the entirety of the network (currently ~2,700 Sentries). Each quorum is reformed every few hours. 3 out of 4 quorums must agree on a block in order to establish a chainlock.
 
 This mechanism provides a high probability of finality. In the rare event that finality cannot be achieved on a block, the network falls back to the longest chain rule of Nakamoto consensus - a seamless and non-breaking event.
 
