@@ -41,7 +41,9 @@ PoDA generically allows us to have censorship-resistance of data for rollups. Th
 
 ### Architecture of PoDA
 
-Now, with a good understanding of Syscoin’s basis for secure finality that does not compromise the antifragility properties of our PoW, we can segway into Syscoin’s approach to Data Availability. PoDA calls for pruning raw data received by nodes processing blocks and leaving just the hash of that data in its place. Ethereum is also doing this with EIP-4844 using KZG commitments. While our general strategies are similar, Syscoin brings several important differences that promote better decentralization, performance, and overall security.
+We recommend the reader have a good understanding of Syscoin’s basis for secure [finality](Finality.md) that does not compromise the antifragility properties of Proof-of-Work before proceeding into the architecture of Syscoin's data availability protocol.
+
+PoDA calls for pruning raw data received by nodes processing blocks and leaving just the hash of that data in its place. Ethereum is also doing this with EIP-4844 using KZG commitments. While our general strategies are similar, Syscoin brings several important differences that promote better decentralization, performance, and overall security.
 
 1. Syscoin uses Keccak-based blobs.
   1. No trusted setup
