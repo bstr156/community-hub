@@ -44,7 +44,7 @@ Syscoin is [merge-mined](https://docs.syscoin.org/docs/tech/merged-mining) by Bi
 However, Syscoin does not mirror Bitcoin's economics and consensus rules. Syscoin's economy is utility-focused and based upon [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559). We source Bitcoin’s network for the hardness it provides and pass that on to rollups! 
 
 ### [Finality](Finality.md) that is Decentralized and Fault Tolerant
-Syscoin’s finality is sourced from a multi-quorum consisting of 4 groups of 400 masternodes (1,600) which are randomly selected among the entirety of the network (currently ~2,500 MNs). Each quorum is reformed every few hours. 3 out of 4 quorums must agree on a block in order to establish a chainlock.
+Syscoin’s finality is sourced from a multi-quorum consisting of 4 groups of 400 Sentry nodes (1,600) which are randomly selected among the entirety of the network (currently ~2,500 MNs). Each quorum is reformed every few hours. 3 out of 4 quorums must agree on a block in order to establish a chainlock.
 
 This mechanism provides a high probability of finality. In the rare event that finality cannot be achieved on a block, the network falls back to the longest chain rule of Nakamoto consensus - a seamless and non-breaking event.
 
@@ -56,7 +56,7 @@ This mechanism provides a high probability of finality. In the rare event that f
 
 Every five blocks (total of 12.5 minutes based on average blocktime), a chainlock checkpoints the chain.
 
-Syscoin’s finality provides effective resistance to 51%, malicious long-range MEV, and selfish mining attacks, while retaining PoW as the underlying consensus mechanism. Attackers must accomplish two expensive and challenging tasks to achieve a successful 51% attack: 1) Control greater than 50% of Bitcoin's hash power supplied to Syscoin, plus 2) Control a super-majority of Syscoin masternodes.
+Syscoin’s finality provides effective resistance to 51%, malicious long-range MEV, and selfish mining attacks, while retaining PoW as the underlying consensus mechanism. Attackers must accomplish two expensive and challenging tasks to achieve a successful 51% attack: 1) Control greater than 50% of Bitcoin's hash power supplied to Syscoin, plus 2) Control a super-majority of Syscoin Sentry nodes.
 
 ### Efficient Data Availability on Layer 1 with [PoDA](PoDA.md)
 Data availability is required to exist within the security domain of Layer 1 in order for rollups to properly serve critical financial applications by securing users’ ability to exit to L1. Syscoin’s L1 DA solution is called PoDA (Proof of Data Availability). Syscoin’s PoDA differs from Ethereum’s danksharding in how data is stored, presented, pruned, and how fees are calculated. PoDA has characteristics that make it a valuable alternative to Ethereum’s work-in-progress data availability solution, Proto-Danksharding.
