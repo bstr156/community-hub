@@ -10,7 +10,7 @@ lang: en-US
 The general [design](Design.md) for a layer 2 using PoDA on Syscoin layer 1 can be applied with ZK-based rollups (we have prototyped this with Hermez zkEVM) the same as we have applied with Optimism Bedrock. Since optimistic rollups have some advantages over zkEVM right now due to the overhead of ZK proving, we chose to integrate with Bedrock to begin, and will introduce a hybrid solution likely along the lines of Bedrock/Hermez/zkSync upon emergence of hardware-efficient ZK proving solutions. We feel the Bedrock design is currently the cleanest, most secure and efficient of any of the many rollup designs today.
 
 <div align="center">
-<img width="800" src="../../assets/docs/sys/overall.png">
+<img width="800" src="../../assets/docs/sys/diagram_SyscoinOverallDesign.png">
 </div>
 
 The base layer required a working mechanism for decentralized finality, hash-based blobs and an EVM that is stable and able to provide censorship resistance to rollups on layer 2 and beyond. We released finality + EVM in our NEVM release (Syscoin Core v4.3) in December 2021. To integrate PoDA, we assessed the Bedrock codebase of Optimism and created our initial integration. 
