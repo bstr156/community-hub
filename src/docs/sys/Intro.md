@@ -3,7 +3,7 @@ title: Introduction to Syscoin
 lang: en-US
 ---
 
-Rollux is fast, crazy inexpensive, and attracts a lot of attention! Once you see *why* Rollux is built on Syscoin, and get an overview of what Syscoin has to offer, we think you will be just as excited about SYS. After all, the great things Rollux provides would not be achievable without the appropriate L1 supporting it from beneath. 
+Rollux is fast, crazy inexpensive, and attracts a lot of attention! Once you see *why* Rollux is built on Syscoin, we think you will be just as excited about SYS. After all, the great things Rollux provides would not be achievable without the L1 that supports it from beneath.  
 
 ## Syscoin in a Nutshell
 
@@ -12,12 +12,12 @@ Syscoin is designed as the ideal L1 and data availability layer for modular scal
 1. Syscoin native (UTXO, Bitcoin-based)
 2. Syscoin NEVM (Network-Enhanced Virtual Machine) which provides an EVM
 
-**Syscoin makes rollups more secure with its Bitcoin auxPoW settlement, multi-quorum finality, and efficient data availability in the form of [PoDA (Proof-of-Data-Availability)](PoDA.md).** PoDA is the very first complete L1 data availability solution ever built and deployed to a main network. Furthermore, Syscoin provides finality in the form of a multi-quorum BLS signature scheme as an enhancement on top of Nakamoto consensus which adds resistance selfish mining, and keeps the chain resilient in the face of non-final scenarios by enabling the protocol to resolve down to pure Nakamoto consensus instead of forking/stopping in those situations, unlike Ethereum's Casper.
+**Syscoin makes rollups more secure with its Bitcoin auxPoW settlement, multi-quorum finality, and efficient data availability in the form of [PoDA Protocol (Proof-of-Data-Availability)](PoDA.md).** PoDA, released March 2023, is the very first complete L1 data availability solution ever built and deployed to a main network. Furthermore, Syscoin provides finality in the form of a multi-quorum BLS signature scheme as an enhancement on top of Nakamoto consensus which adds resistance selfish mining, and keeps the chain resilient in the face of non-final scenarios by enabling the protocol to resolve down to pure Nakamoto consensus instead of forking/stopping in those situations, unlike Ethereum's Casper.
 
 **PoDA and multi-quorum finality are unique innovations of Syscoin.**
 
 <div align="center">
-<img width="800" src="../../assets/docs/sys/overall.png">
+<img width="800" src="../../assets/docs/sys/diagram_SyscoinOverallDesign.png">
 </div>
 
 ## Super bullish on modularity
@@ -34,14 +34,24 @@ Syscoin is designed holistically with this in mind. All near-instant activity on
 Here are some ways Syscoin shines for rollups.
 
 ### Bitcoin Merge-Mined PoW
-Syscoin is [merge-mined](https://docs.syscoin.org/docs/tech/merged-mining) by Bitcoin's own network of miners and inherits a significant portion of Bitcoin's hashrate (recently 20-30%) without imposing additional energy costs on miners and while incentivizing them with SYS. Syscoin asserts that Layer 1 security is fulfilled better by PoW than PoS for multiple reasons.
+Syscoin is [merge-mined](https://docs.syscoin.org/docs/tech/merged-mining) by Bitcoin's own network of miners and inherits a significant portion of Bitcoin's hashrate (recently 50-60%).  
 
+Benefits of Bitcoin Merged Mining
+- No additional energy expense to miners (re-applies work already performed)
+- Less subject to miners dropping off due to asset devaluation than direct mining, due to low cost/overhead
+- SYS further incentivizes Bitcoin miners to continue supporting Bitcoin
+- High degree of flexibility in block subsidies and allocations which can translate to special incentives and very low network fees on the child stack 
+- Taps into the antifragility of Bitcoin's network
+
+Syscoin asserts that Layer 1 security is fulfilled better by PoW than PoS for multiple reasons.  
+
+Benefits of Proof-of-Work
 - Resilient to quantum stealth attacks
 - Consensus resilient to more black swan risks (fiat hyper-inflation, internet censorship)
 - Decentralized finality achievable without fault concerns
 - Better survivability against irrationality
 
-However, Syscoin does not mirror Bitcoin's economics and consensus rules. Syscoin's economy is utility-focused and based upon [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559). We source Bitcoin’s network for the hardness it provides and pass that on to rollups! 
+However, Syscoin does not mirror Bitcoin's economics and consensus rules. Syscoin's economy is utility-focused and based upon [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559). It sources Bitcoin’s network for the hardness it provides and passes that on to rollups. 
 
 ### [Finality](Finality.md) that is Decentralized and Fault Tolerant
 Syscoin’s finality is sourced from a multi-quorum consisting of 4 groups of 400 Sentry nodes (1,600) which are randomly selected among the entirety of the network (currently ~2,700 Sentries). Each quorum is reformed every few hours. 3 out of 4 quorums must agree on a block in order to establish a chainlock.
@@ -123,21 +133,14 @@ A. Refer to our replica node setup **[guide](../developers/build/run-a-node/)**.
 **Q. "What RPC/WSS Methods/Subscriptions are available?**  
 A. Refer to our **[RPC documentation](../developers/build/json-rpc/)**.
 
+
 **Q. Can you provide sample transactions of Rollux settling a batch on Syscoin NEVM and using PoDA on Syscoin Native (UTXO), and further info?**  
-A. Yes. These are testnet transactions.  
-NEVM: **<https://tanenbaum.io/tx/0xbdb2618d09e47789f0318900d9cacc904d96369bee2baf44400721ef8b245d8e>**  
-PoDA: **<https://blockbook-dev.elint.services/tx/bae30de7850c370c77eb3590f631070d95c1a175323771fac5ab867fb1342136>**  
-  
-Note: The Blockbook explorer does not currently parse the PoDA hash, but it is visible in the raw transaction data as scriptPubKey.asm: `OP_RETURN 207f262f3352669030f480dd881bc6b3fad68abfcffe81d8e98c7f3e88871ed3a4`
+A. Yes. Samples can be seen in Syscoin's **[PoDA documentation](https://docs.syscoin.org/docs/tech/poda)**.
 
 
-
-**Q. How can I see/retrieve the full raw data blobs the L1 receives from the L2?**  
-A. The hash of the raw data blob is always stored on-chain for the purpose of proving data integrity, as seen above in OP_RETURN. As for the full raw data blobs, they are available within the native chain’s mempool for a period of six hours before being pruned. During this window of time, archiving services can access and store the raw data. The data can be retrieved a couple of ways:  
-  
-- Syscoin Core RPCs: `listnevmblobdata`, `getnevmblobdata`
-- syscointx-js
+**Q. How can I interact with PoDA Protocol?**  
+A. Refer to Syscoin's **[PoDA documentation](https://docs.syscoin.org/docs/tech/poda)**.
 
 
 **Q. Are there any established processes for archiving Rollux raw data committed to PoDA?**  
-A. Yes. Syscoin Sentinel provides a PoDA client and server that enables a Cloudflare R2 archive process to be activated relatively easily. This means any Syscoin Core node can provide data archive service that rollup solutions like Rollux can use. Refer to: **<https://github.com/syscoin/sentinel/blob/master/README.md>**
+A. Refer to Syscoin's **[PoDA documentation](https://docs.syscoin.org/docs/tech/poda)**.
