@@ -5,12 +5,12 @@ lang: en-US
 
 ## Inherited L1 Security with L2 Variable Gas Rate Dominance
 
-Rollups today inherit the security of the base layer by paying a variable fee based on the size of the batch of transactions settling from layer 2. With PoDA integrated into Bedrock this fee falls down drastically to just 1400 gas per batch (which itself is 2MB of transactions). Since the BatchInbox smart contract can take a variable number of batches (called blobs) to verify them via the data precompile they will be negligible in the overall cost of a layer 2 transaction. The rollup sequencer may pay 2000 gas (including overhead for the contract) for every 2MB of transactions (roughly 30000 transactions at 70 bytes per L2 transaction compressed) or roughly around only 15 gas per transaction.
+Rollups today inherit the security of the base layer by paying a variable fee based on the size of the batch of transactions settling from layer 2. With BitcoinDA integrated into Bedrock this fee falls down drastically to just 1400 gas per batch (which itself is 2MB of transactions). Since the BatchInbox smart contract can take a variable number of batches (called blobs) to verify them via the data precompile they will be negligible in the overall cost of a layer 2 transaction. The rollup sequencer may pay 2000 gas (including overhead for the contract) for every 2MB of transactions (roughly 30000 transactions at 70 bytes per L2 transaction compressed) or roughly around only 15 gas per transaction.
 
-Without a rollup those 30K transactions would cost 630M gas. Using Optimism Bedrock on Ethereum today would cost roughly 32M gas. So Optimism brings around 20x savings from native Ethereum.  That's great!  Even so, with PoDA, savings range from 315000x cheaper than native Ethereum to 16500x cheaper than Optimism Bedrock on Ethereum today. Note that there is also a small fee of around the same to put the data in PoDA on the UTXO chain as well.
+Without a rollup those 30K transactions would cost 630M gas. Using Optimism Bedrock on Ethereum today would cost roughly 32M gas. So Optimism brings around 20x savings from native Ethereum.  That's great!  Even so, with BitcoinDA, savings range from 315000x cheaper than native Ethereum to 16500x cheaper than Optimism Bedrock on Ethereum today. Note that there is also a small fee of around the same to put the data in BitcoinDA on the UTXO chain as well.
 
 ```info
-Cost comparison above is based on earlier versions of Optimism.  New efficienies have further improved Optimism's costs.  New data will be provided here soon showing more recent calculations of the cost benefits of PoDA + Optimism. 
+Cost comparison above is based on earlier versions of Optimism.  New efficienies have further improved Optimism's costs.  New data will be provided here soon showing more recent calculations of the cost benefits of BitcoinDA + Optimism. 
 ```
 
 ### Storage
@@ -23,7 +23,7 @@ Ethereum plans to match this sort of design with EIP-4844 and later Data-Availab
 
 2. Not quantum resistant due to the need for a polynomial commitment scheme with a pairing assumption.
 
-3. Requiring new mechanics to work with data, to validate data externally from the clients instead of the simply tooling around Keccak hashing we use in PoDA.
+3. Requiring new mechanics to work with data, to validate data externally from the clients instead of the simply tooling around Keccak hashing we use in BitcoinDA.
 
 4. Sharding can theoretically improve throughput but requires longer liveness prior to pruning because of collusion possibilities and generally more edge-cases for attacks. Also introduces risk in complexity and goes against our philosophy of you only need to trust yourself and can validate the state of your chain yourself without trusting anyone else (Sharding requires an assumption that the data is generally available through half of the nodes and each node validates their own shard is committed to the entire blob). In our case we prune after only 6 hours of the previous chainlock (finality event), and there are no new edge-cases created using hash-based blobs since the blockchain itself assumes security of the hash construction with a great degree of Lindy effects.
 

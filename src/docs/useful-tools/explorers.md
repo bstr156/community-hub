@@ -20,10 +20,10 @@ Aailable for the Syscoin NEVM Layer 1:
 
 ## Blockbook
 
-Blockbook serves the Syscoin Native UTXO L1 chain. This chain serves as deep infrastructure and is used by Rollux for L1 data availability ([PoDA](/docs/sys/PoDA/)). Refer to [Blockbook API documentation](https://github.com/syscoin/blockbook/blob/master/docs/api.md).
+Blockbook serves the Syscoin Native UTXO L1 chain. This chain serves as deep infrastructure and is used by Rollux for L1 data availability ([BitcoinDA](/docs/sys/PoDA/)). Refer to [Blockbook API documentation](https://github.com/syscoin/blockbook/blob/master/docs/api.md).
 
-- [Blockbook for Syscoin Native UTXO mainnet](https://blockbook.elint.services)
-- [Blockbook for Syscoin Native UTXO testnet](https://blockbook-dev.elint.services)
+- [Blockbook for Syscoin Native UTXO mainnet](https://blockbook.syscoin.org)
+- [Blockbook for Syscoin Native UTXO testnet](https://blockbook-dev.syscoin.org)
 
 <!---
 

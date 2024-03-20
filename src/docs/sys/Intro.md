@@ -3,7 +3,7 @@ title: Introduction to Syscoin
 lang: en-US
 ---
 
-Rollux is fast, crazy inexpensive, and attracts a lot of attention! Once you see *why* Rollux is built on Syscoin, we think you will be just as excited about SYS. After all, the great things Rollux provides would not be achievable without the L1 that supports it from beneath.  
+Rollux is fast, crazy inexpensive, and attracts a lot of attention! Once you see *why* Rollux is built on Syscoin, we think you will be just as excited about SYS. After all, the great things Rollux provides would not be achievable without the L1 that supports it from beneath, and the unique enshrined data availability it provides.  
 
 ## Syscoin in a Nutshell
 
@@ -12,12 +12,12 @@ Syscoin is designed as the ideal L1 and data availability layer for modular scal
 1. Syscoin native (UTXO, Bitcoin-based)
 2. Syscoin NEVM (Network-Enhanced Virtual Machine) which provides an EVM
 
-**Syscoin makes rollups more secure with its Bitcoin auxPoW settlement, multi-quorum finality, and efficient data availability in the form of [PoDA Protocol (Proof-of-Data-Availability)](PoDA.md).** PoDA, released March 2023, is the very first complete L1 data availability solution ever built and deployed to a main network. Furthermore, Syscoin provides finality in the form of a multi-quorum BLS signature scheme as an enhancement on top of Nakamoto consensus which adds resistance selfish mining, and keeps the chain resilient in the face of non-final scenarios by enabling the protocol to resolve down to pure Nakamoto consensus instead of forking/stopping in those situations, unlike Ethereum's Casper.
+**Syscoin makes rollups more secure with its Bitcoin auxPoW settlement, multi-quorum finality, and efficient data availability in the form of [BitcoinDA Protocol](PoDA.md).** BitcoinDA is based upon Syscoin's original PoDA which was released March 2023 as the very first complete L1 data availability solution ever built and deployed to a main network. Furthermore, Syscoin provides finality in the form of a multi-quorum BLS signature scheme as an enhancement on top of Nakamoto consensus which adds resistance selfish mining, and keeps the chain resilient in the face of non-final scenarios by enabling the protocol to resolve down to pure Nakamoto consensus instead of forking/stopping in those situations, unlike Ethereum's Casper.
 
-**PoDA and multi-quorum finality are unique innovations of Syscoin.**
+**BitcoinDA and multi-quorum finality are unique innovations of Syscoin.**
 
 <div align="center">
-<img width="800" src="../../assets/docs/sys/diagram_SyscoinOverallDesign.png">
+<img width="800" src="../../assets/docs/sys/diagram_SyscoinOverallDesign_rev2.png">
 </div>
 
 ## Super bullish on modularity
@@ -68,10 +68,10 @@ Every five blocks (total of 12.5 minutes based on average blocktime), a chainloc
 
 Syscoin’s finality provides effective resistance to 51%, malicious long-range MEV, and selfish mining attacks, while retaining PoW as the underlying consensus mechanism. Attackers must accomplish two expensive and challenging tasks to achieve a successful 51% attack: 1) Control greater than 50% of Bitcoin's hash power supplied to Syscoin, plus 2) Control a super-majority of Syscoin Sentry nodes.
 
-### Efficient Data Availability on Layer 1 with [PoDA](PoDA.md)
-Data availability is required to exist within the security domain of Layer 1 in order for rollups to properly serve critical financial applications by securing users’ ability to exit to L1. Syscoin’s L1 DA solution is called PoDA (Proof of Data Availability). Syscoin’s PoDA differs from Ethereum’s danksharding in how data is stored, presented, pruned, and how fees are calculated. PoDA has characteristics that make it a valuable alternative to Ethereum’s work-in-progress data availability solution, Proto-Danksharding.
+### Efficient Data Availability on Layer 1 with [BitcoinDA](PoDA.md)
+Data availability is required to exist within the security domain of Layer 1 in order for rollups to properly serve critical financial applications by securing users’ ability to exit to L1. Syscoin’s L1 DA solution is called BitcoinDA, and differs from Ethereum’s danksharding in how data is stored, presented, pruned, and how fees are calculated. BitcoinDA has characteristics that make it a valuable alternative to Ethereum’s work-in-progress data availability solution, Proto-Danksharding.
 
-PoDA’s advantages can be summarized as:
+BitcoinDA’s advantages can be summarized as:
 
 - Cheaper transactions
 - No data sharding required
@@ -81,9 +81,9 @@ PoDA’s advantages can be summarized as:
 - Simpler data fee market based on Syscoin’s UTXO fee market
 - Nakamoto Assumption: Only one honest node is needed to guarantee data
 
-PoDA’s design considers proving and archiving as separate concerns. With PoDA, the succinct proof of data is stored on Layer 1, while an assumption is made that at least one honest party in the world will archive the raw data within a 6-hour window of time - similar to the honesty assumption made when syncing a Bitcoin node (at least one honest node). If desired, the raw data itself can be secured by Syscoin’s L1 network by reposting the data every 6 hours.
+Based upon PoDA, the design considers proving and archiving as separate concerns. The succinct proof of data is stored on Layer 1, while an assumption is made that at least one honest party in the world will archive the raw data within a 6-hour window of time - similar to the honesty assumption made when syncing a Bitcoin node (at least one honest node). If desired, the raw data itself can be secured by Syscoin’s L1 network by reposting the data every 6 hours.
 
-Validium (fully offchain DA) is also available as an alternative to PoDA for less-critical applications where the focus might be on even lower cost and higher throughput by trading-off Layer 1 data security. However, in the case of Syscoin PoDA, Layer 1 data security is quite affordable and PoDA nodes can store raw data offchain if they wish while still gaining the security of onchain state and proving.
+Eigen-based DA and Validiums (fully offchain DA) can also serve as an alternative to BitcoinDA for applications where the focus might be on even lower cost and higher throughput. However, in the case of BitcoinDA, Layer 1 data security is quite affordable; archive nodes store raw data offchain while you gain the security of onchain state and verification of data integrity.
 
 
 ### [Inherited L1 Security with L2 Variable Gas Rate Dominance](Gas.md)
@@ -134,13 +134,13 @@ A. Refer to our replica node setup **[guide](../developers/build/run-a-node/)**.
 A. Refer to our **[RPC documentation](../developers/build/json-rpc/)**.
 
 
-**Q. Can you provide sample transactions of Rollux settling a batch on Syscoin NEVM and using PoDA on Syscoin Native (UTXO), and further info?**  
-A. Yes. Samples can be seen in Syscoin's **[PoDA documentation](https://docs.syscoin.org/docs/tech/poda)**.
+**Q. Can you provide sample transactions of Rollux settling a batch on Syscoin NEVM and using BitcoinDA on Syscoin Native (UTXO), and further info?**  
+A. Yes. Samples can be seen in Syscoin's **[BitcoinDA documentation](https://docs.syscoin.org/docs/tech/poda)**.
 
 
-**Q. How can I interact with PoDA Protocol?**  
-A. Refer to Syscoin's **[PoDA documentation](https://docs.syscoin.org/docs/tech/poda)**.
+**Q. How can I interact with BitcoinDA Protocol?**  
+A. Refer to Syscoin's **[BitcoinDA documentation](https://docs.syscoin.org/docs/tech/poda)**.
 
 
-**Q. Are there any established processes for archiving Rollux raw data committed to PoDA?**  
-A. Refer to Syscoin's **[PoDA documentation](https://docs.syscoin.org/docs/tech/poda)**.
+**Q. Are there any established processes for archiving Rollux raw data committed to BitcoinDA?**  
+A. Refer to Syscoin's **[BitcoinDA documentation](https://docs.syscoin.org/docs/tech/poda)**.
