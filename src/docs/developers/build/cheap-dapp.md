@@ -21,7 +21,7 @@ The cost of an L2 transaction on Rollux is composed of two components:
   Do not hardcode this value. 
   
 - L1 data fee, which is proportional to:
-  - The gas cost of settling the transaction's data with PoDA on L1
+  - The gas cost of settling the transaction's data with BitcoinDA on L1
   - The cost of gas on L1.
     The cost of gas on L1 can be somewhat volatile. 
   

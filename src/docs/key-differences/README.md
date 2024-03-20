@@ -7,7 +7,7 @@ However, Rollux has differences that give the Rollux ecosystem and its users som
 | Area           | Optimism | Rollux |
 | - | - | - |
 | Layer 1 | Ethereum | [Syscoin NEVM](../sys) |
-| L1 Data Availability | calldata/Danksharding | [PoDA](../protocol/2-rollup-protocol/#block-storage) |
+| L1 Data Availability | calldata/Danksharding | [BitcoinDA](../protocol/2-rollup-protocol/#block-storage) |
 | L1 Data Fee Market | Currently expensive | Very low cost |
 | Ready for L3, L4 | No | [Yes](../protocol/2-rollup-protocol/#block-storage) |
 | Native Coin (gas) | ETH | [SYS](https://coinmarketcap.com/currencies/syscoin/) |

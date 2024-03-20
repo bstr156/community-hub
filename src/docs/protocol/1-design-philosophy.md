@@ -25,7 +25,7 @@ All of this serves to maximize the security and correctness of the Rollux protoc
 
 Simplicity is also important for the long-term vision of Rollux.
 By limiting the amount of code on top of Syscoin NEVM or Ethereum tooling, we're able to spend most of our time working directly with existing codebases.
-Engineering effort that goes into Rollux can also directly benefit Syscoin or Ethereum, and vice versa (which is the case with PoDA, Syscoin's data availability solution).
+Engineering effort that goes into Rollux can also directly benefit Syscoin or Ethereum, and vice versa (which is the case with BitcoinDA, Syscoin's data availability solution).
 This will only become more pronounced as the Rollux protocol solidifies and existing resources can be redirected towards core Syscoin infrastructure.
 
 ## Pragmatism

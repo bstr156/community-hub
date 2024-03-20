@@ -32,12 +32,12 @@ This step is crucial to the security properties of Rollux because it means that 
 It's what makes Rollux an L2.
 
 Users on Rollux have to pay for the cost of submitting their transactions to Syscoin.
-We call this the **L1 data fee**, and it's the primary discrepancy between Rollux and Syscoin. Because of [PoDA (Proof of Data Availability)](../sys/PoDA.md), the L1 data fee with Rollux is typically very low, much lower in fact than what you would pay for using Optimism on Ethereum today.
+We call this the **L1 data fee**, and it's the primary discrepancy between Rollux and Syscoin. Because of [BitcoinDA Protocol](../sys/PoDA.md), the L1 data fee with Rollux is typically very low, in fact comparable to what is paid on Optimism today with Proto-Danksharding (EIP-4844), except secured by Bitcoin's Proof-of-Work.
 
 This fee is based on four factors:
 
 1. The current gas price on Syscoin.
-2. The gas cost to publish the transaction through PoDA to the Syscoin UTXO chain.
+2. The gas cost to publish the transaction through BitcoinDA to the Syscoin UTXO chain.
 3. A fixed overhead cost denominated in gas. This is currently set to 2100.
 4. A dynamic overhead cost which scales the L1 fee paid by a fixed number. This is currently set to 1.0.
 

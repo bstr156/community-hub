@@ -11,26 +11,26 @@ Then we'll explain *how* Rollux is built as an optimistic rollup and why we beli
 
 Rollux is an "optimistic rollup," which is basically just a fancy way of describing a blockchain that piggy-backs off of the security of another "parent" blockchain.
 Specifically, optimistic rollups take advantage of the consensus mechanism (like PoW or PoS) of their parent chain instead of providing their own.
-In Rollux's case this parent blockchain is Syscoin. That means Rollux inherits the upstream security of Syscoin, which is merge-mined by the most powerful PoW network on the planet, Bitcoin! Furthermore, Syscoin L1 provides decentralized finality on top of Nakamoto consensus which makes it highly resistant to 51% attacks, and Syscoin provides data availability with PoDA. You can find out more about Syscoin and what makes it special [here](../sys/README.md)!
+In Rollux's case this parent blockchain is Syscoin. That means Rollux inherits the upstream security of Syscoin, which is merge-mined by the most powerful PoW network on the planet, Bitcoin! Furthermore, Syscoin L1 provides decentralized finality on top of Nakamoto consensus which makes it highly resistant to 51% attacks, and Syscoin provides data availability with BitcoinDA. You can find out more about Syscoin and what makes it special [here](../sys/README.md)!
 
 
 ## Block storage
 
 <details open>
 <summary><b>Syscoin L1 Data Availability for Rollux</b></summary>
-Unlike Optimism which must expensively store blocks on the Ethereum L1 as calldata, Rollux L2 blocks are stored via Syscoin's Layer 1 PoDA protocol (Proof-of-Data-Availability). A proof of the block is stored on Syscoin's native (UTXO) blockchain, and the entirety of the raw block data is stored in the cloud via Syscoin full nodes that also function as PoDA cloud clients.
+Unlike Optimism which must expensively store blocks on the Ethereum L1 as calldata, Rollux L2 blocks are stored via Syscoin's Layer 1 BitcoinDA protocol. A proof of the block is stored on Syscoin's native (UTXO) blockchain, and the entirety of the raw block data is stored in the cloud via Syscoin full nodes that also function as BitcoinDA cloud clients.
 
-Refer to [PoDA](../sys/PoDA.md) for a high level understanding of Syscoin PoDA and its benefits.
+Refer to [BitcoinDA](../sys/PoDA.md) for a high level understanding of Syscoin's BitcoinDA and its benefits.
 
-In brief, PoDA already provides a number of benefits over Ethereum's work-in-progress and future DA solution (proto-danksharding):
+In brief, BitcoinDA already provides a number of benefits over Ethereum's work-in-progress and future DA solution (proto-danksharding):
 
 
-1. PoDA does not need to shard data. Every full node processes blobs fully.
+1. BitcoinDA does not need to shard data. Every full node processes blobs fully.
    - Trust yourself only
    - Fewer attack vectors, more resistant to censorship
    - Data is simple to reproduce and check
    - Syscoin can prune data much quicker, and tie in pruning with finality + 6 hours.
-2. PoDA uses Keccak-based blobs instead of KZG commitments.
+2. BitcoinDA uses Keccak-based blobs instead of KZG commitments.
    - No trusted setup
    - Quantum safe
    - Very performant
@@ -42,7 +42,7 @@ Go compare Rollux's and Optimism's approaches to data availability firsthand by 
 <details open>
 <summary><b>Rollux L2 Data Availability for supporting L3 and beyond (fractal scaling)</b></summary>
 
-Another key differentiator in Rollux's favor is that it is already primed to support L3s and fractal scaling with proper data availability. This is because Rollux offers its own implementation of PoDA natively. This means other layers can use Rollux for data availability. Rollux PoDA handles data storage in a similar manner as Syscoin, with the added benefits of more throughput and even lower costs. Fractal layers using Rollux also inherit the security of Syscoin's L1, as Rollux stores its own block data there. 
+Another key differentiator in Rollux's favor is that it is already primed to support L3s and fractal scaling with proper data availability. This is because Rollux offers its own implementation of BitcoinDA natively. This means other layers can use Rollux for data availability. Rollux BitcoinDA handles data storage in a similar manner as Syscoin, with the added benefits of more throughput and even lower costs. Fractal layers using Rollux also inherit the security of Syscoin's L1, as Rollux stores its own block data there. 
 
 </details>
 
