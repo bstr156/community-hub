@@ -68,12 +68,12 @@ To see the full list of providers visit [Node & API Providers](./providers.md).
 
 ### Syscoin Native (UTXO) Mainnet
 
-[Syscoin Foundation Blockbook API](https://blockbook.elint.services) - [Documentation](https://github.com/syscoin/blockbook/blob/master/docs/api.md)
+[Syscoin Foundation Blockbook API](https://blockbook.syscoin.org) - [Documentation](https://github.com/syscoin/blockbook/blob/master/docs/api.md)
 
 
 ### Syscoin Native (UTXO) Testnet
 
-[Syscoin Foundation Blockbook API](https://blockbook-dev.elint.services) - [Documentation](https://github.com/syscoin/blockbook/blob/master/docs/api.md)
+[Syscoin Foundation Blockbook API](https://blockbook-dev.syscoin.org) - [Documentation](https://github.com/syscoin/blockbook/blob/master/docs/api.md)
 
 
 ::: warning Ignore other networks

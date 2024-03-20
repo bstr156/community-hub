@@ -43,7 +43,7 @@ The Syscoin Foundation provides free rate-limited RPC and websocket services for
 - [Rollux (Mainnet and Tanenbaum)](https://docs.syscoin.org/docs/guides/rollux/metamask#rollux-testnet-details)
 - [Syscoin NEVM L1 (Mainnet and Tanenbaum)](https://docs.syscoin.org/docs/guides/nevm/metamask#manual-setup-to-connect-to-syscoin-network)
 
-The foundation also provides Blockbook APIs for Syscoin's Native UTXO chain, both [mainnet](https://blockbook.elint.services) and [testnet](https://blockbook-dev.elint.services). The Native UTXO chain serves as deep infrastructure and is used by Rollux for L1 data availability (BitcoinDA). Refer to [Blockbook API documentation](https://github.com/syscoin/blockbook/blob/master/docs/api.md).
+The foundation also provides Blockbook APIs for Syscoin's Native UTXO chain, both [mainnet](https://blockbook.syscoin.org) and [testnet](https://blockbook-dev.syscoin.org). The Native UTXO chain serves as deep infrastructure and is used by Rollux for L1 data availability (BitcoinDA). Refer to [Blockbook API documentation](https://github.com/syscoin/blockbook/blob/master/docs/api.md).
 
 
 ## Don't see your company here?
