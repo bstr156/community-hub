@@ -7,6 +7,10 @@ Rollux is fast, crazy inexpensive, and attracts a lot of attention! Once you see
 
 ## Syscoin in a Nutshell
 
+For the simplest and highest-level overview of Syscoin, check out [Syscoin in a Nutshell](https://docs.syscoin.org/docs/intro/nutshell) in the Syscoin Docs.
+
+## Overview
+
 Syscoin is designed as the ideal L1 and data availability layer for modular scaling technologies like rollups. It provides a coordinated dual-chain stack;
 
 1. Syscoin native (UTXO, Bitcoin-based)
@@ -17,7 +21,7 @@ Syscoin is designed as the ideal L1 and data availability layer for modular scal
 **BitcoinDA and multi-quorum finality are unique innovations of Syscoin.**
 
 <div align="center">
-<img width="800" src="../../assets/docs/sys/diagram_SyscoinOverallDesign.png">
+<img width="800" src="../../assets/docs/sys/diagram_SyscoinOverallDesign_rev2.png">
 </div>
 
 ## Super bullish on modularity
