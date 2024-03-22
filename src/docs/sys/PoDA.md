@@ -18,7 +18,7 @@ The base layer required a working mechanism for decentralized finality, hash-bas
 You can view the difference between Rollux's and Optimism's approaches to data availability firsthand by viewing this Github commit: [https://github.com/sys-labs/rollux/commit/25a4c9410ddae31ff7195f67495491f71e684e03](https://github.com/sys-labs/rollux/commit/25a4c9410ddae31ff7195f67495491f71e684e03). You can also view the full diff here: [https://github.com/ethereum-optimism/optimism/compare/develop...sys-labs:rollux:develop](https://github.com/ethereum-optimism/optimism/compare/develop...sys-labs:rollux:develop).
 
 <div align="center">
-<img width="800" src="../../assets/docs/sys/poda.png">
+<img width="800" src="../../assets/docs/sys/diagram_SyscoinBitcoinDA.png">
 </div>
 
 The gist of the integration is summed as follows. This allows us to easily integrate BitcoinDA into any rollup systematically. You can follow the graphic above with the explanation of the numbered sequences below.
